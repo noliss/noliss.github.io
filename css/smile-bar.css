@@ -1,0 +1,127 @@
+@keyframes float {
+  to {
+    transform: translateY(0.75em);
+  }
+}
+
+form[class="balloons-other__bar"] {
+  --x: calc(var(--val)/100*(100% - 1em));
+  position: relative;
+  width: 92vw;
+  max-width: 600px;
+  color: gainsboro;
+  /* fallback for no CSS vars */
+  color: HSL(calc((1 - var(--val)/100)*22 + var(--val)/100*49), calc((1 - var(--val)/100)*100% + var(--val)/100*100%), calc((1 - var(--val)/100)*54% + var(--val)/100*50%));
+  font: 2.5em/2 nunito, sans-serif;
+}
+
+label[for='mood'] {
+  display: block;
+  margin-bottom: .75em;
+  font-size: .625em;
+  counter-reset: val var(--val);
+}
+
+input[id='mood'] {
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 0.5em;
+  background: none;
+  cursor: pointer;
+}
+input[id='mood'], input[id='mood']::-webkit-slider-thumb, input[id='mood']::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+}
+input[id='mood']::-webkit-slider-runnable-track {
+  border: none;
+  width: 100%;
+  height: 0.5em;
+  border-radius: 0.25em;
+  background: #888b8d;
+  /* works for no CSS vars here */
+  background-image: linear-gradient(90deg, #ff6a13, currentcolor var(--x), transparent 0);
+}
+input[id='mood']::-moz-range-track {
+  border: none;
+  width: 100%;
+  height: 0.5em;
+  border-radius: 0.25em;
+  background: #888b8d;
+  /* works for no CSS vars here */
+  background-image: linear-gradient(90deg, #ff6a13, currentcolor var(--x), transparent 0);
+}
+input[id='mood']::-ms-track {
+  border: none;
+  width: 100%;
+  height: 0.5em;
+  border-radius: 0.25em;
+  background: #888b8d;
+  /* works for no CSS vars here */
+  background-image: linear-gradient(90deg, #ff6a13, currentcolor var(--x), transparent 0);
+  color: transparent;
+}
+input[id='mood']::-ms-fill-lower {
+  border-radius: 0.25em 0 0 0.25em;
+  background-image: linear-gradient(90deg, #ff6a13, #ffd100);
+  /* no var fallback */
+  background-image: linear-gradient(90deg, #ff6a13, var(--c, currentcolor));
+}
+input[id='mood']::-webkit-slider-thumb {
+  border: none;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  /* some visual fallback if no emoji */
+  box-shadow: inset 0 0 0 2px #eee;
+  background: #222;
+  margin-top: -0.25em;
+}
+input[id='mood']::-moz-range-thumb {
+  border: none;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  /* some visual fallback if no emoji */
+  box-shadow: inset 0 0 0 2px #eee;
+  background: #222;
+}
+input[id='mood']::-ms-thumb {
+  border: none;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  /* some visual fallback if no emoji */
+  box-shadow: inset 0 0 0 2px #eee;
+  background: #222;
+  margin-top: 0;
+}
+input[id='mood']:focus {
+  outline: none
+}
+
+output[for='mood'] {
+  /* for browsers that don't support vars, 
+   * so won't place the emoji correctly even if 
+   * they display it and not show a rectangle */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -0.25em;
+  left: var(--x);
+  width: 1em;
+  height: 1em;
+  pointer-events: none;
+}
+
+/* if CSS variables are supported */
+@supports (margin: var(--m, 1em)) {
+  label[for='mood']:after {
+    content: ": " counter(val) "%";
+  }
+
+  output[for='mood'] {
+    display: flex;
+  }
+}
