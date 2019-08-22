@@ -1284,7 +1284,7 @@
     margin-left: -5px;
   }
   .header-menu {
-    display: flex;
+    display: none;
     position: absolute;
     right: 0%;
     top: 13%;
