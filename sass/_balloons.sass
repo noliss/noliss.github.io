@@ -1,0 +1,280 @@
+.main
+	&-screen
+		&__balls
+			&--red
+				a
+					color: #e52e2f
+
+.balloons-bg
+	height: 725px
+	background-image: url(../img/balloons/balloons-bg.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+
+.balloons-about
+	height: 840px
+	background-image: url(../img/balloons/bg/balloons-bg-1.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	&__headline
+		padding-top: 46px
+		text-align: center
+		font-family: $jura
+		color: $l-gray
+		font-size: 72px
+		font-weight: 400
+		text-transform: uppercase
+		&--green
+			color: #c3d123
+	&__text
+		font-family: $jura
+		text-align: left
+		color: #4d4d4d
+		font-size: 30px
+		font-weight: 400
+		margin-left: 69px
+		margin-top: 67px
+
+.balloons-can
+	height: 760px
+	background-image: url(../img/balloons/bg/balloons-bg-2.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	&__headline
+		text-align: center
+		color: $l-gray
+		font-family: $jura
+		font-size: 72px
+		font-weight: 400
+		text-transform: uppercase
+		&--red
+			color: #e52e2e
+		img
+			margin-bottom: -6px
+			margin-right: 5px
+	&-ctn
+		display: flex
+		margin-top: 104px
+	&__bg
+		width: 360px
+		height: 449px
+		position: relative
+		box-shadow: 0 5px 24px 1px rgba(93, 93, 93, 0.5)
+		background-color: #ffffff
+		margin-left: 30px
+		&:first-child
+			margin-left: 0px
+	&__hl, &__text
+		text-align: center
+		font-size: 24px
+		font-weight: 400
+		font-family: $jura
+	&__hl
+		padding-top: 45px
+		color: #e52e2e
+	&__text
+		color: $l-gray
+	&__img
+		position: absolute
+		left: 27%
+		top: 50%
+
+.balloons-gallery
+	height: 860px
+	background-image: url(../img/balloons/bg/balloons-bg-3.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	&__headline, &__text
+		text-align: center
+		color: #4c4c4c
+		font-family: $jura
+		font-size: 38px
+		font-weight: 400
+	&__headline
+		padding-top: 30px
+		font-size: 72px
+		text-transform: uppercase
+		&--blue
+			color: #2330de
+		img
+			margin-left: -135px
+			margin-bottom: -10px
+	&__text
+		margin-top: 10px
+	&-photo, &-photo-d
+		display: flex
+		margin-top: 44px
+		&__item
+			width: 263px
+			margin-right: 26px
+			height: 174px
+			box-shadow: 0 0 9px 1px rgba(124, 130, 207, 0.5)
+			border-radius: 15px
+			background-color: #2330de
+			position: relative
+			z-index: 1
+			&:first-child
+				margin-left: 0
+		&__loop
+			background-image: url(../img/balloons/gallery/loop.png)
+			background-repeat: no-repeat
+			position: absolute
+			top: 30%
+			left: 37%
+			height: 70px
+			width: 70px
+			opacity: 1
+			z-index: -1
+		.lightzoom
+			cursor: pointer
+			z-index: 1
+			&:hover
+				opacity: 0.5
+				transition: 0.3s
+	&-photo-d
+		margin-top: 32px
+	&__button
+		width: 223px
+		height: 40px
+		box-shadow: 0 3px 4px 2px rgba(165, 165, 165, 0.5)
+		background-color: #c0c0c0
+		color: white
+		font-family: $jura
+		font-size: 19px
+		font-weight: bold
+		margin-top: 60px
+		text-transform: uppercase
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		padding-top: 19px
+		cursor: pointer
+		&:hover
+			background-color: #2330de
+			transition: 0.3s
+		&:active
+			transform: translateX(1px) translateY(1px)
+			transition: 0.3s
+
+.balloons-comment
+	height: 820px
+	background-image: url(../img/balloons/bg/balloons-bg-4.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	&__headline, &__text
+		text-align: center
+		color: $l-gray
+		font-family: $jura
+		font-weight: 400
+	&__headline
+		padding-top: 30px
+		font-size: 72px
+		color: #d39232
+		text-transform: uppercase
+		&--gray
+			color: $l-gray
+		img
+			margin-bottom: -10px
+			margin-left: -90px
+	&__text
+		font-size: 38px
+.balloons-slider
+	height: 428px
+	background-image: url(../img/balloons/slider/slider-bg.png)
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: center center
+	margin-top: 70px
+	&-profile
+		display: flex
+		align-items: center
+		&__photo
+			width: 100px
+			height: 100px
+			border: 10px solid #f2c581
+			background-color: #b1c3f3
+			border-radius: 50%
+			margin-left: 68px
+		&__name
+			margin-left: 25px
+			color: $l-gray
+			font-family: $jura
+			font-size: 30px
+			font-weight: 500
+	&__text
+		width: 1003px
+		height: 188px
+		color: $l-gray
+		font-family: $jura
+		font-size: 24px
+		font-weight: 400
+		margin-left: 85px
+
+.slick-slide 
+		outline: none
+
+.balloons-other
+	height: 465px
+	background-image: url(../img/balloons/bg/balloons-bg-5.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	&__headline
+		color: $l-gray
+		font-family: $jura
+		font-size: 72px
+		font-weight: 400
+		text-transform: uppercase
+		text-align: center
+		&--blue
+			color: #81c9ea
+		img
+			margin-bottom: -13px
+			margin-left: -65px
+	&__bar
+		margin: 0 auto
+		margin-top: 55px
+	&__button
+		width: 165px
+		height: 50px
+		box-shadow: 0 3px 4px 2px rgba(165, 165, 165, 0.5)
+		background-color: #c0c0c0
+		color: white
+		font-family: $jura
+		font-size: 30px
+		font-weight: 400
+		cursor: pointer
+		padding-top: 10px
+		text-align: center
+		margin: 0 auto
+		margin-top: 60px
+		&:hover
+			background-color: #81c9ea
+			transition: 0.3s
+		&:active
+			transform: translateX(1px) translateY(1px)
+			transition: 0.3s
+
+.balloons-contacts
+	height: 825px
+	background-image: url(../img/balloons/bg/balloons-bg-6.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	&__headline
+		color: $l-gray
+		font-family: $jura
+		text-align: center
+		font-size: 72px
+		font-weight: 400
+		text-transform: uppercase
+		padding-top: 40px
+		img
+			margin-bottom: -13px
+		&--green
+			color: #75e06d

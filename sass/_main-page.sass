@@ -1,0 +1,243 @@
+.main-bg
+	height: 725px
+	background-image: url(../img/main/main-bg.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+
+.main-screen
+	text-align: center
+	padding-top: 155px
+	&__it, &__it-mobile, &__balls
+		font-family: $jura
+		font-size: 40px
+		font-weight: bold
+		text-transform: uppercase
+		cursor: pointer
+		a
+			color: $l-gray
+			text-decoration: none
+	&__it
+		text-align: right
+		margin-right: 93px
+		&-mobile
+			display: none
+	&__logo
+		margin-top: 70px
+	&__underlogo
+		color: $l-gray
+		font-family: $jura
+		font-weight: 700
+		font-size: 24px
+		text-transform: uppercase
+		margin-right: 49px
+		&--red
+			color: #e52e2f
+		&--blue
+			color: #2330de
+	&__balls
+		margin-top: 60px
+		text-align: left
+		margin-right: 20px
+
+.contacts
+	height: 750px
+	padding-top: 25px
+	&__headline
+		justify-content: center
+		align-items: center
+		font-family: $jura
+		font-size: 72px
+		font-weight: 400
+		text-transform: uppercase
+		color: $l-gray
+		display: flex
+		&--blue
+			color: #81c9ea
+			margin-left: 18px
+			margin-right: 18px
+	&-founders
+		margin-top: 45px
+		display: flex
+		justify-content: space-between
+		&__first, &__second
+			width: 360px
+			height: 360px
+			border: 5px solid #4c4c4c
+			background-color: #ffffff
+			border-radius: 50%
+			img
+				width: 362px
+				height: 362px
+				margin-top: -1px
+				margin-left: -1px
+		&__first
+			margin-left: 98px
+		&__second
+			margin-right: 98px
+		&-desc
+			margin-top: 10px
+			display: flex
+			justify-content: space-between
+			&__first, &__second
+				color: $l-gray
+				font-family: $jura
+				font-size: 24px
+				font-weight: 400
+				margin-top: 10px
+			&__first
+				margin-left: 80px
+				text-align: center
+			&__second
+				margin-right: 110px
+				text-align: center
+		&-m-desc
+			&__first, &__second
+				display: none
+		&-icon
+			display: flex
+			justify-content: space-between
+			margin-top: 20px
+			&__first
+				margin-left: 167px
+				a
+					margin-left: 30px
+					&:first-child
+						margin-left: 0px
+			&__second
+				margin-right: 170px
+				a
+					margin-right: 0px
+					&:first-child
+						margin-right: 30px
+		&-m-icon
+			&__first, &__second
+				display: none
+
+.request
+	width: 100%
+	height: 888px
+	background-color: #eeeeee
+	&__headline
+		padding-top: 40px
+		text-align: center
+		color: #81c9ea
+		font-family: $jura
+		font-size: 72px
+		font-weight: 400
+		text-transform: uppercase
+		&--black
+			color: $l-gray
+		img
+			margin-bottom: -6px
+	&__about
+		text-align: center
+		color: $l-gray
+		font-family: $jura
+		letter-spacing: 2.85px
+		font-size: 38px
+		font-weight: 400
+
+.request-form
+	display: flex
+	margin-top: 90px
+	&__bg, &__order
+		width: 360px
+		height: 80px
+		background-color: #ffffff
+		box-shadow: 0 5px 24px 1px rgba(134, 134, 134, 0.5)
+		&:hover
+			box-shadow: 0 5px 24px 1px rgba(129, 201, 234, 0.5)
+	&__button
+		width: 225px
+		height: 60px
+		box-shadow: 0 3px 4px 2px rgba(165, 165, 165, 0.5)
+		background-color: #c0c0c0
+		outline: none
+		border: 0
+		display: block
+		margin: 0 auto
+		margin-top: 50px
+		color: white
+		font-family: $jura
+		font-size: 20px
+		font-weight: bold
+		text-transform: uppercase
+		letter-spacing: 1px
+		cursor: pointer
+		&:hover
+			background-color: #81c9ea
+			transition: 0.3s
+		&:active
+			transform: translateX(2px) translateY(2px)
+	&__text
+		outline: none
+		width: 310px
+		height: 50px
+		border: 1px solid #81c9ea
+		background-color: #ffffff
+		margin-left: 15px
+		margin-top: 15px
+		padding-left: 20px
+		color: #a9a9a9
+		font-family: $jura
+		font-size: 18px
+		font-weight: 400
+		text-transform: uppercase
+		&[type="text"]
+			text-transform: none
+			color: $l-gray
+			&:-moz-placeholder
+				transition: opacity 0.3s ease
+				color: #a9a9a9
+				font-family: $jura
+				font-size: 18px
+				font-weight: 400
+				text-transform: uppercase
+			&::-webkit-input-placeholder
+				transition: opacity 0.3s ease
+				color: #a9a9a9
+				font-family: $jura
+				font-size: 18px
+				font-weight: 400
+				text-transform: uppercase
+			&:focus
+				&:-moz-placeholder
+					opacity: 0
+					transition: opacity 0.3s ease
+				&::-webkit-input-placeholder
+					opacity: 0
+					transition: opacity 0.3s ease
+				&:-ms-input-placeholder
+					opacity: 0
+					transition: opacity 0.3s ease
+				&::-moz-placeholder
+					opacity: 0
+					transition: opacity 0.3s ease
+			&:-ms-input-placeholder
+				transition: opacity 0.3s ease
+				color: #a9a9a9
+				font-family: $jura
+				font-size: 18px
+				font-weight: 400
+				text-transform: uppercase
+			&::-moz-placeholder
+				transition: opacity 0.3s ease
+				color: #a9a9a9
+				font-family: $jura
+				font-size: 18px
+				font-weight: 400
+				text-transform: uppercase
+	&__order
+		height: 277px
+		width: 748px
+		margin-left: 15px
+		.request-form__text
+			width: 695px
+			height: 235px
+			padding-top: 10px
+			resize: none
+	&-c1, &-c3
+		.request-form__bg
+			&:last-child
+				margin-top: 19px

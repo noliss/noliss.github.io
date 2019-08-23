@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Выбор обслуживания</title>
+	<!-- RedHelper -->
+	<script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async" 
+	src="https://web.redhelper.ru/service/main.js?c=nolisss">
+	</script> 
+	<!--/Redhelper -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__logo">
+				<a href="index.html"><img src="img/logo.png" alt="Цветной шар"></a>
+			</div>
+			<div class="header-menu">
+				<ul class="header-menu__list">
+					<li class="header-menu__item">
+						<a class="header-menu__link" href="index.html">Главная</a>
+					</li>
+					<li class="header-menu__item">
+						<a class="header-menu__link" href="balloons.html">Шары</a>
+					</li>
+					<li class="header-menu__item">
+						<a class="header-menu__link" href="service-selection.html">It-обслуживание</a>
+						<!-- SubMenu -->
+						<ul class="header-submenu">
+					  	<li class="header-submenu__item">
+					  		<a class="header-submenu__link" href="entity.html">Юр. лицам</a>
+					  	</li>
+					  	<li class="header-submenu__item">
+					  		<a class="header-submenu__link" href="individual.html">Физ. лицам</a>
+					  	</li>
+					  </ul>
+					  <!-- /SubMenu -->
+					</li>
+				</ul>
+			</div>
+			<!-- header-menu -->
+			<div class="header__phone">
+				Позвоните нам
+				<div class="header__phone-number">
+					<a href="tel:+79605344782">+79605344782</a>
+				</div>
+			</div>
+		</div>
+		<!-- Container -->
+	</header>
+
+	<main class="main">
+		<div class="service-select">
+			<div class="container">
+				<div class="service-select__headline">
+					<span class="service-select__headline--blue">Для кого</span><br>
+					нам предоставить<br>
+					свои услуги?
+				</div>
+				<div class="service-select-s">
+					<a href="individual.html"><div class="service-select-s__individual" onmouseover="TextOn('ind');" onmouseout="TextOff('ind');"></div></a>
+					<a href="entity.html"><div class="service-select-s__entity" onmouseover="TextOn('ent');" onmouseout="TextOff('ent');"></div></a>
+				</div>
+				<div class="service-select-text">
+					<a href="individual.html" id="ind" class="service-select-text__individual">Физическое лицо</a>
+					<a href="entity.html" id="ent" class="service-select-text__entity">Юридическое лицо</a>
+				</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-content__headline">© 2019 ООО «Цветной Шар»</div>
+					<div class="footer-content__soc">
+						<a href="#"><img src="img/footer/footer-vk.png" alt="Вконтакте"></a>
+						<a href="#"><img src="img/footer/footer-inst.png" alt="Инстаграм"></a>
+					</div>
+				</div>
+		</div>
+	</footer>
+	
+	<script type="text/javascript">
+		function TextOn(k){
+		var el = document.getElementById(k);
+		el.style.color = '#81c9ea';
+		el.style.color = '#81c9ea';
+		el.style.fontWeight = 'bold';
+		}
+		function TextOff(k){
+		var el = document.getElementById(k);
+		el.style.color = '#4c4c4c';
+		el.style.fontWeight = '400';
+		}
+	</script>
+</body>
+</html>

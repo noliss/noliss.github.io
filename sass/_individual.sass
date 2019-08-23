@@ -1,0 +1,224 @@
+.it-idv-bg
+	height: 725px
+	background-image: url(../img/it/individual/ind-bg.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+.it-idv__it
+	color: #2330de
+	font-weight: 600
+	font-size: 50px
+.it-idv-service
+	height: 800px
+	background-image: url(../img/it/individual/service/it-service.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	&__headline
+		padding-top: 200px
+		text-align: center
+		color: $black
+		font-family: $jura
+		font-size: 72px
+		font-weight: 400
+		text-transform: uppercase
+		&--blue
+			color: #81c9ea
+	&__text
+		margin-left: 78px
+		margin-top: 85px
+		color: $black
+		font-family: $jura
+		font-size: 30px
+		font-weight: 400
+.it-idv-price
+	height: 800px
+	&__headline
+		color: $black
+		font-family: $jura
+		font-size: 72px
+		font-weight: 400
+		text-transform: uppercase
+		text-align: center
+		&--blue
+			color: #81c9ea
+	&__text
+		color: $l-gray
+		font-family: $jura
+		font-size: 38px
+		font-weight: 400
+		text-align: center
+	&__line, &__line-2
+		width: 1073px
+		height: 5px
+		background-color: #81c9ea
+		&:first-child
+			margin-top: 24px
+	&-list
+		list-style: none
+		display: flex
+		text-align: center
+		align-items: center
+		&__item
+			color: $black
+			font-family: $jura
+			font-size: 15px
+			font-weight: 400
+			white-space: nowrap
+			margin-left: 60px
+			cursor: pointer
+			&:first-child
+				margin-left: -55px
+	&-down
+		display: flex
+		justify-content: flex-end
+		&__t
+			color: $black
+			font-family: $jura
+			font-size: 30px
+			font-weight: 400
+			text-transform: uppercase
+			margin-right: 150px
+			margin-top: 10px
+			&-m
+				color: #81c9ea
+		&__button
+			width: 165px
+			height: 35px
+			border: 5px solid #81c9ea
+			border-top: none
+			cursor: pointer
+			color: $black
+			background-color: #ffffff
+			text-align: center
+			padding-top: 15px
+			font-family: $jura
+			font-size: 16px
+			font-weight: 500
+			text-transform: uppercase
+			margin-right: 115px
+			&:hover
+				color: #4c4c4c
+.it-idv-slider
+	height: 355px
+	.slick-next
+		right: 40px
+	.slick-prev
+		left: -40px
+	&-radio
+		margin-top: 20px
+		margin-bottom: 20px
+		label
+			font-family: $jura
+			font-weight: 500
+			font-size: 20px
+			color: $l-gray
+	[type="checkbox"]
+		&:checked, &:not(:checked)
+			position: absolute
+			left: -9999px
+		&:checked + label, &:not(:checked) + label
+			position: relative
+			padding-left: 28px
+			cursor: pointer
+			line-height: 20px
+			display: inline-block
+			color: #666
+		&:checked + label:before, &:not(:checked) + label:before
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			width: 20px
+			height: 20px
+			border: 2px solid #81c9ea
+			background-color: #ffffff
+			display: inline-block
+			border-radius: 50%
+			cursor: pointer
+		&:checked + label:after
+			content: ''
+			width: 12px
+			height: 12px
+			background: #F87DA9
+			position: absolute
+			top: 6px
+			left: 6px
+			border-radius: 100%
+			-webkit-transition: all 0.2s ease
+			transition: all 0.2s ease
+		&:not(:checked) + label:after
+			content: ''
+			width: 12px
+			height: 12px
+			background: #F87DA9
+			position: absolute
+			top: 4px
+			left: 4px
+			border-radius: 100%
+			-webkit-transition: all 0.2s ease
+			transition: all 0.2s ease
+			opacity: 0
+			-webkit-transform: scale(0)
+			transform: scale(0)
+		&:checked + label:after
+		opacity: 1
+		-webkit-transform: scale(1)
+		transform: scale(1)
+
+.it-idv-comment
+	background-image: url(../img/it/individual/comment/bg-comment.png)
+	height: 1250px
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	&__headline
+		padding-top: 20px
+		color: #81c9ea
+		text-align: center
+		font-family: $jura
+		font-size: 72px
+		font-weight: 400
+		text-transform: uppercase
+		img
+			margin-bottom: -15px
+			margin-left: -75px
+		&--black
+			color: $l-gray
+.it-idv-slider-comment
+	padding-top: 70px
+.it-idv-slider-profile__photo
+	width: 100px
+	height: 100px
+	border: 10px solid #81c9ea
+	background-color: #b1c3f3
+	border-radius: 50%
+	margin-left: 80px
+.it-idv-slider__text
+	color: $l-gray
+	font-family: $jura
+	font-size: 24px
+	font-weight: 400
+	height: 188px
+	margin-left: 80px
+	margin-top: 20px
+
+.it-idv-other
+	padding-top: 150px
+
+.it-idv-contacts
+	&__headline
+		text-align: center
+		color: #4c4c4c
+		font-family: $jura
+		font-size: 72px
+		font-weight: 400
+		text-transform: uppercase
+		img
+			margin-bottom: -15px
+			margin-left: -0px
+		&--black
+			color: #81c9ea
+
+.it-idv-request-form
+	margin-top: 140px

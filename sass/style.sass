@@ -1,0 +1,384 @@
+@import "fonts"
+@import "colors"
+@import "header"
+@import "main-page"
+@import "footer"
+@import "balloons"
+@import "service-selection"
+@import "individual"
+@import "entity"
+
+/////////// SLIDER FIX ////////////
+@media (min-width: 985px) and (max-width: 1139px)
+	.it-idv-price
+		&-select
+			margin-left: 130px
+		&__line-2
+			margin-left: 160px
+		&-down
+			&__button
+				width: 105px
+				height: 18px
+				font-size: 10px
+				margin-right: 170px
+				padding-top: 8px
+			&__t
+				font-size: 19px
+		.it-idv-slider
+			margin-left: 130px
+			&-radio
+				label
+					font-size: 13px
+		.slick-track
+			width: 600px
+		.slick-next
+			right: 140px
+			.slick-prev
+				left: 35px
+	.it-idv-comment
+		&__headline
+			font-size: 52px
+/////////// /SLIDER FIX ////////////
+
+
+@media screen and (max-width: 1140px)
+	.header
+		.container
+			justify-content: center
+		&__phone, &-menu__link
+			font-size: 19px
+		&-menu
+			&__link
+				margin-left: -20px
+			&__item
+				&:hover
+					.header-submenu
+						-webkit-transform: scaleY(0)
+						-ms-transform: scaleY(0)
+						transform: scaleY(0)
+					&:after, &:before
+						height: 0px
+		&__logo
+			img
+				width: 135px
+				height: 18px
+	.main-screen
+		&__it, &__balls
+			font-size: 25px
+		&__logo
+			img
+				width: 537px
+				height: 69px
+		&__underlogo
+			font-size: 15px
+	.contacts
+		&__headline
+			padding-top: 75px
+			font-size: 52px
+			img
+				width: 32px
+				height: 51px
+		&-founders
+			justify-content: space-evenly
+			&__first, &__second
+				width: 262px
+				height: 289px
+				img
+					width: 262px
+					height: 289px
+			&__first
+				margin-right: 20px
+			&-m-desc
+				&__first, &__second
+					display: none
+			&-desc
+				justify-content: space-evenly
+				&__first, &__second
+					font-size: 17px
+			&-icon
+				justify-content: space-evenly
+				&__first
+					margin-left: 25px
+				&__second
+					margin-right: 35px
+				img
+					width: 72px
+					height: 72px
+	.request
+		&__headline
+			font-size: 52px
+			img
+				width: 55px
+				height: 51px
+		&__about
+			font-size: 27px
+	.request-form
+		justify-content: center
+		&__order
+			width: 380px
+		&__text[placeholder="ВАШ ЗАКАЗ"]
+			width: 327px
+	///// BALLOONS //////
+	.balloons-about
+		&__headline
+			padding-top: 85px
+			font-size: 52px
+		&__text
+			width: 760px
+			font-size: 22px
+			margin: 0 auto
+			margin-top: 45px
+	.balloons-can
+		&__headline
+			font-size: 52px
+			img
+				width: 32px
+				height: 51px
+		&-ctn
+			margin-top: 35px
+			flex-wrap: wrap
+			justify-content: center
+		&__bg
+			height: 380px
+			width: 320px
+			&:last-child
+				margin-top: -75px
+		&__img
+			img
+				margin-top: 20px
+				width: 138px
+				height: 138px
+	.balloons-gallery
+		&__headline
+			padding-top: 95px 
+		&-photo, &-photo-d
+			justify-content: center
+			&__item
+				&:last-child
+					display: none
+	.balloons-comment
+		&__headline
+			font-size: 52px
+			padding-top: 140px
+		&__text
+			font-size: 27px
+	.balloons-slider
+		margin: 0 auto
+		margin-top: 80px
+		&__text
+			margin-left: 0px
+	.slick-prev
+		left: 15px
+	.balloons-other
+		font-size: 18px
+		&__headline
+			padding-top: 95px
+			font-size: 52px
+	.balloons-contacts__headline
+		font-size: 52px
+		font-weight: 500
+		padding-top: 95px
+	/////////// SERVICE - SELECT ////////////
+	.service-select
+		&__headline
+			font-size: 52px
+			font-weight: 500
+	//////////// ENTITY ////////////////////
+	.it-idv-service
+		&__headline
+			font-size: 52px
+		&__text
+			font-size: 22px
+	.it-ent-details
+		&__headline
+			font-size: 52px
+			img
+				width: 53px
+				height: 51px
+		&__text
+			font-size: 27px
+	////////// INDIVIDUAL ///////////////
+	.it-idv-service
+		&__text
+			width: 760px
+			margin: 0 auto
+			margin-top: 50px
+	.it-idv-price
+		&__headline
+			font-size: 52px
+		&__text
+			font-size: 27px
+		&-select
+			margin-left: 130px
+		&__line, &__line-2
+			width: 679px
+		&__line-2
+			margin-left: 130px
+		&-list
+			flex-wrap: wrap
+			padding-left: 0
+			margin-left: 25px
+			&__item
+				font-size: 9px
+		&-down
+			&__button
+				width: 105px
+				height: 18px
+				font-size: 10px
+				margin-right: 170px
+				padding-top: 8px
+			&__t
+				font-size: 19px
+		.it-idv-slider
+			margin-left: 130px
+			&-radio
+				label
+					font-size: 13px
+		.slick-track
+			width: 600px
+		.slick-next
+			right: 140px
+			.slick-prev
+				left: 35px
+	.it-idv-comment
+		&__headline
+			font-size: 52px
+
+
+@media screen and (min-width: 320px) and (max-width: 768px)
+	.header
+		.container
+			justify-content: space-between
+		&__phone
+			font-size: 19px
+			margin-left: -5px
+		&-menu
+			display: none
+			position: absolute
+			right: 0%
+			top: 12.8%
+			text-align: center
+			border: 2px solid #e3e3e3
+			background-color: #ffffff
+			width: 180px
+			&__list
+				width: 180px
+				margin-left: 20px
+				flex-direction: column
+			&__item
+				margin-left: 0px
+				line-height: 1.3
+		&__logo
+			display: none
+		&__m-logo
+			display: block
+		&__mobile
+			display: block
+	.main-bg
+		height: 300px
+	.main-screen
+		padding-top: 0px
+		&__it
+			display: none
+			&-mobile
+				display: block
+				font-size: 22px
+				margin-top: 25px
+		&__balls
+			margin-top: 25px
+			font-size: 22px
+			text-align: center
+		&__logo
+			margin-top: 0
+			padding-top: 45px
+			img
+				width: 262px
+				height: 34px
+		&__underlogo
+			font-size: 10px
+			margin-right: 0px
+	.twentytwenty-handle
+		height: 25px
+		width: 25px
+	.contacts
+		height: 800px
+		&__headline
+			font-size: 26px
+			font-weight: 500
+			img
+				width: 22px
+				height: 35px
+				margin-right: -5px
+		&-founders
+			margin: 0px
+			margin-top: 25px
+			display: block
+			&__first, &__second
+				width: 184px
+				height: 197px
+				margin: 0 auto
+				img
+					margin-top: 0.1px
+					margin-left: 0.1px
+					width: 184px
+					height: 197px
+			&__second
+				margin-top: 35px
+			&-m-desc
+				&__first, &__second
+					display: block
+					color: $l-gray
+					font-family: $jura
+					font-size: 17px
+					font-weight: 400
+					text-align: center
+					margin-top: 15px
+			&-desc
+				display: none
+			&-m-icon
+				&__first, &__second
+					display: block
+					text-align: center
+					margin-top: 10px
+					img
+						width: 72px
+						height: 72px
+				&__first
+					img
+						margin-right: 8px
+				&__second
+					img
+						margin-right: 8px
+			&-icon
+				display: none
+	.request
+		height: 950px
+		&__headline
+			font-size: 26px
+			font-weight: 500
+			img
+				width: 38px
+				height: 35px
+				margin-left: -15px
+		&__about
+			font-size: 20px
+		&-form
+			display: block
+			margin-left: 5px
+			margin-top: 25px
+			&__bg
+				width: 290px
+				margin: 0 auto
+			&__text
+				width: 240px
+			&__order
+				width: 290px
+				margin: 0 auto
+				margin-top: 18px
+			&__text[placeholder="ВАШ ЗАКАЗ"]
+				width: 238px
+			&-c1
+				margin: 0 auto
+/////////////// /INDEX //////////////////////
+
+////////////// BALLOONS /////////////////////

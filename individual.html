@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IT-обслуживание</title>
+	<!-- RedHelper -->
+	<script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async" 
+	src="https://web.redhelper.ru/service/main.js?c=nolisss">
+	</script> 
+	<!--/Redhelper -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/smile-bar.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__logo">
+				<a href="index.html"><img src="img/logo.png" alt="Цветной шар"></a>
+			</div>
+			<div class="header-menu">
+				<ul class="header-menu__list">
+					<li class="header-menu__item">
+						<a class="header-menu__link" href="index.html">Главная</a>
+					</li>
+					<li class="header-menu__item">
+						<a class="header-menu__link" href="balloons.html">Шары</a>
+					</li>
+					<li class="header-menu__item">
+						<a class="header-menu__link" href="service-selection.html">It-обслуживание</a>
+						<!-- SubMenu -->
+						<ul class="header-submenu">
+					  	<li class="header-submenu__item">
+					  		<a class="header-submenu__link" href="entity.html">Юр. лицам</a>
+					  	</li>
+					  	<li class="header-submenu__item">
+					  		<a class="header-submenu__link" href="individual.html">Физ. лицам</a>
+					  	</li>
+					  </ul>
+					  <!-- /SubMenu -->
+					</li>
+				</ul>
+			</div>
+			<!-- header-menu -->
+			<div class="header__phone">
+				Позвоните нам
+				<div class="header__phone-number">
+					<a href="tel:+79605344782">+79605344782</a>
+				</div>
+			</div>
+		</div>
+		<!-- Container -->
+	</header>
+
+	<main class="main">
+		<div class="it-idv-bg">
+			<div class="container">
+				<div class="main-screen">
+					<div class="main-screen__it it-idv__it"><a href="service-selection.html">IT-обслуживание</a></div>
+					<div class="main-screen__logo">
+						<img src="img/main/main-logo.png" alt="Логотип" style="margin-top: -10px;">
+					</div>
+					<div class="main-screen__underlogo">
+						<span class="main-screen__underlogo--red">Адекватные</span> 
+						цены - 
+						<span class="main-screen__underlogo--blue">профессиональный</span>
+						подход
+					</div>
+					<div class="main-screen__balls"><a href="balloons.html">Оформление воздушными шарами</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="it-idv-service">
+			<div class="container">
+				<div class="it-idv-service__headline">
+					<span class="it-idv-service__headline--blue">IT</span>-обслуживание
+				</div>
+				<div class="it-idv-service__text">
+					Наша деятельность делится на подход к физическим и к юридическим<br> лицам.<br>
+					- Для физических лиц мы осуществляем такие услуги как: чистка<br> системного блока/корпуса ноутбука от пыли, удаление вирусов, <br>установка ОС Windows, Linux, прикладных программ и т. д.
+
+				</div>
+			</div>
+		</div>
+		<div class="it-idv-price">
+			<div class="container">
+				<div class="it-idv-price__headline">
+					Ознакомьтесь с нашим<br>
+					<p class="it-idv-price__headline--blue">прайс-листом</p>
+				</div>
+				<div class="it-idv-price__text">
+					И рассчитайте цену за все выбранные услуги
+				</div>
+				<div class="it-idv-price-select">
+					<div class="it-idv-price__line"></div>
+					<div class="it-idv-price-menu">
+						<ul class="it-idv-price-list">
+							<li class="it-idv-price-list__item" onclick="firstplay(0);">Выезд и диагностика</li>
+							<li class="it-idv-price-list__item" onclick="firstplay(1);">Программное обеспечение</li>
+							<li class="it-idv-price-list__item" onclick="firstplay(2);" style="color: #81c9ea; transform: scale(1.2,1.2);">Техобслуживание<br>
+							системного блока</li>
+							<li class="it-idv-price-list__item" onclick="firstplay(3);">Техобслуживание<br>
+							ноутбуков / нетбуков</li>
+							<li class="it-idv-price-list__item" onclick="firstplay(4);">Локальные вычислительные<br>
+							сети</li>
+						</ul>
+					</div>
+					<div class="it-idv-price__line"></div>
+				</div>
+					<!-- SLICK SLIDER -->
+					<!-- ВЫЕЗД И ДИАГНОСТИКА -->
+					<form action="#" class="it-idv-slider" style="display: none;">
+						<div class="it-idv-slider-item">
+							<p class="it-idv-slider-radio">
+						 	  <input type="checkbox" id="diag-1" name="radio-group" value="0">
+						 	  <label for="diag-1">
+						 			Выезд к заказчику в пределах Ярославля..................................................................................................Бесплатно
+						 	  </label>
+					 		</p>
+					 		<p class="it-idv-slider-radio">
+						 	  <input type="checkbox" id="diag-2" name="radio-group" value="0">
+						 	  <label for="diag-2">
+						 			Выезд к заказчику за пределами Ярославля..........................................................................................Договорная
+						 	  </label>
+					 		</p>
+					 		<p class="it-idv-slider-radio">
+						 	  <input type="checkbox" id="diag-3" name="radio-group" value="0">
+						 	  <label for="diag-3">
+						 			Первоначальная диагностика неисправности с продолжением работы.....................................Бесплатно
+						 	  </label>
+					 		</p>
+					 		<p class="it-idv-slider-radio">
+						 	  <input type="checkbox" id="diag-4" name="radio-group" value="500">
+						 	  <label for="diag-4">
+						 			Первоначальная диагностика неисправности без продолжения работы...............................................500р
+						 	  </label>
+					 		</p>
+					 		<p class="it-idv-slider-radio">
+						 	  <input type="checkbox" id="diag-5" name="radio-group" value="500">
+						 	  <label for="diag-5">
+						 			Минимальная сумма заказа.............................................................................................................................................500р
+						 	  </label>
+					 		</p>
+						</div>
+					</form>
+					<!-- ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ -->
+					<form action="#" class="it-idv-slider" style="display: none;">
+					 <div class="it-idv-slider-item">
+					 	 <p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-1" name="radio-group" value="550">
+					 	  <label for="po-1">
+					 			Установка / переустановка без активации операционной системы<br>
+								семейства Microsoft Windows ( 7 / 8 / 10 )......................................................................................................................550р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-2" name="radio-group" value="600">
+					 	  <label for="po-2">
+					 			Установка / переустановка операционной системы<br>
+								семейства ОС Linux (Ubuntu, OpenSUSE и т.д.)...........................................................................................................600р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-3" name="radio-group" value="200">
+					 	  <label for="po-3">
+					 			Установка / переустановка программного обеспечения<br>
+								Microsoft Office – от 3000 (лицензия) / Open Office / Liberty Office...................................................................200р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-4" name="radio-group" value="450">
+					 	  <label for="po-4">
+					 			Проверка компьютера на наличие вирусов и их устранение.........................................................................450р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-5" name="radio-group" value="600">
+					 	  <label for="po-5">
+					 			Восстановление операционной системы<br>
+								семейства Microsoft Windows (  7/ 8 / 10) после сбоя или действия вредоносных программ.............600р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-6" name="radio-group" value="350">
+					 	  <label for="po-6">
+					 			Настройка операционной системы Microsoft Windows ( 7 / 8 / 10)....................................................................350р
+					 	  </label>
+					 	</p>
+					 </div>
+					 <div class="it-idv-slider-item">
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-7" name="radio-group" value="200">
+					 	  <label for="po-7">
+					 			Установка / переустановка стандартного пакета драйверов.......................................................................200р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-8" name="radio-group" value="300">
+					 	  <label for="po-8">
+					 			Установка / переустановка антивирусного программного обеспечения<br>
+								(бесплатные антивирусы: Avast, Kaspersky Free, 360 Total Security)............................................................300р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-9" name="radio-group" value="250">
+					 	  <label for="po-9">
+					 			Установка / переустановка общего программного обеспечения...............................................................250р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-10" name="radio-group" value="250">
+					 	  <label for="po-10">
+					 			Работы с жестким диском:пере-разбивка на логические разделы,<br>
+								форматирование, проведение дефрагментации и т.д........................................................................................250р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-11" name="radio-group" value="200">
+					 	  <label for="po-11">
+					 			Сохранение данных заказчика на другой носитель информации<br>
+								(без записи на CD/DVD) в случае неработоспособности системы.<br>
+								Цена указана за однократное сохранение не более 1 Гб информации...................................................200р
+					 	  </label>
+					 	</p>
+					 </div>
+					 <div class="it-idv-slider-item">
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-12" name="radio-group" value="100">
+					 	  <label for="po-12">
+					 			Сохранение данных заказчика на другой носитель информации<br>
+								(без записи на CD/DVD) в случае неработоспособности системы.<br>
+								Цена указана за однократное сохранение 1 Гб при сохранении от 1 Гб до 5 Гб информации.<br>
+								Округляется в большую сторону до 1 ГБ...................................................................................................................100р               
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-13" name="radio-group" value="70">
+					 	  <label for="po-13">
+					 			Сохранение данных заказчика на другой носитель информации<br>
+								(без записи на CD/DVD) в случае неработоспособности системы.<br>
+								Цена указана за однократное сохранение 1 Гб при сохранении более 5 Гб информации.<br>
+								Округляется в большую сторону до 1 ГБ.....................................................................................................................70р                  
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-14" name="radio-group" value="100">
+					 	  <label for="po-14">
+					 			Перенос данных заказчика на другой носитель информации (без записи на CD/DVD).<br>
+								Цена указана за однократный перенос не более 1 Гб информации..........................................................100р
+					 	  </label>
+					 	</p>
+					 </div>
+					 <div class="it-idv-slider-item">
+					 		<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-15" name="radio-group" value="50">
+					 	  <label for="po-15">
+					 			Перенос данных заказчика на другой носитель информации (без записи на CD/DVD).<br>
+								Цена указана за однократный перенос 1 Гб при переносе от 1 Гб до 5 Гб информации.<br>
+								Округляется в большую сторону до 1 ГБ.....................................................................................................................50р
+					 	  </label>
+					 	</p>
+					 		<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-16" name="radio-group" value="40">
+					 	  <label for="po-16">
+					 			Перенос данных заказчика на другой носитель информации (без записи на CD/DVD).<br>
+								Цена указана за однократный перенос 1 Гб при переносе более 5 Гб информации.<br>
+								Округляется в большую сторону до 1 ГБ.....................................................................................................................40р 
+					 	  </label>
+					 	</p>
+					 		<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="po-17" name="radio-group" value="200">
+					 	  <label for="po-17">
+					 			Восстановление утерянных данных программными средствами<br>
+								с работоспособных носителей................................................................................................................................от 200р
+					 	  </label>
+					 	</p>
+					 </div>
+					</form>
+					<!-- ТЕХ. ОБСЛУЖИВАНИЕ СИС. БЛОКА -->
+					<form action="#" class="it-idv-slider">
+					 <div class="it-idv-slider-item">
+					 	 <p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-1" name="radio-group" value="300">
+					 	  <label for="tehsis-1">
+					 			Профилактика компонентов системного блока....................................................................................................300р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-2" name="radio-group" value="50">
+					 	  <label for="tehsis-2">
+					 			Установка / снятие центрального процессора........................................................................................................50р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-3" name="radio-group" value="50">
+					 	  <label for="tehsis-3">
+					 			Установка / снятие кулера для центрального процессора...............................................................................50р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-4" name="radio-group" value="100">
+					 	  <label for="tehsis-4">
+					 			Установка / снятие материнской платы.....................................................................................................................100р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-5" name="radio-group" value="100">
+					 	  <label for="tehsis-5">
+					 			Установка / снятие видеокарты.....................................................................................................................................100р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-6" name="radio-group" value="50">
+					 	  <label for="tehsis-6">
+					 			Установка / снятие кулера графического процессора видеокарты............................................................50р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-7" name="radio-group" value="50">
+					 	  <label for="tehsis-7">
+					 			Установка / снятие модуля оперативной памяти....................................................................................................50р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-8" name="radio-group" value="100">
+					 	  <label for="tehsis-8">
+					 			Установка / снятие жесткого диска HDD...................................................................................................................100р
+					 	  </label>
+					 	</p>
+					 </div>
+					 <div class="it-idv-slider-item">
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-9" name="radio-group" value="100">
+					 	  <label for="tehsis-9">
+					 			Установка / снятие FDD дисковода..............................................................................................................................100р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-10" name="radio-group" value="100">
+					 	  <label for="tehsis-10">
+					 			Установка / снятие дисковода CD-ROM / DVD-ROM / BD-ROM...........................................................................100р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-11" name="radio-group" value="100">
+					 	  <label for="tehsis-11">
+					 			Установка / снятие блока питания...............................................................................................................................100р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-12" name="radio-group" value="100">
+					 	  <label for="tehsis-12">
+					 			Установка / снятие сетевой платы...............................................................................................................................100р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-13" name="radio-group" value="400">
+					 	  <label for="tehsis-13">
+					 			Оптимизация внутреннего пространства системного блока........................................................................400р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-14" name="radio-group" value="50">
+					 	  <label for="tehsis-14">
+					 			Замена элемента питания BIOS материнской платы...............................................................................................50р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-15" name="radio-group" value="100">
+					 	  <label for="tehsis-15">
+					 			Установка / снятие вентилятора охлаждения системного блока.................................................................100р
+					 	  </label>
+					 	</p>
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-16" name="radio-group" value="150">
+					 	  <label for="tehsis-16">
+					 			Замена термопасты..............................................................................................................................................................150р
+					 	  </label>
+					 	</p>
+					 </div>
+					 <div class="it-idv-slider-item">
+					 	<p class="it-idv-slider-radio">
+					 	  <input type="checkbox" id="tehsis-17" name="radio-group" value="250">
+					 	  <label for="tehsis-17">
+					 			Чистка системного блока от пыли................................................................................................................................250р                     
+					 	  </label>
+					 	</p>
+					 </div>
+					</form>
+					<!-- ТЕХ. ОБСЛУЖИВАНИЕ НОУТБУКОВ -->
+					<form action="#" class="it-idv-slider" style="display: none;">
+						<div class="it-idv-slider-item">
+							<p class="it-idv-slider-radio">
+					 	  	<input type="checkbox" id="notb-1" name="radio-group" value="200">
+					 	  	<label for="notb-1">
+					 			Установка / снятие модулей оперативной памяти..........................................................................................от 200р
+					 	  	</label>
+					 		</p>
+					 		<p class="it-idv-slider-radio">
+					 	  	<input type="checkbox" id="notb-2" name="radio-group" value="200">
+					 	  	<label for="notb-2">
+					 			Установка / снятие HDD, SSD устройств...............................................................................................................от 200р
+					 	  	</label>
+					 		</p>
+					 		<p class="it-idv-slider-radio">
+					 	  	<input type="checkbox" id="notb-3" name="radio-group" value="300">
+					 	  	<label for="notb-3">
+					 			Установка / снятие CD, DVD, FDD устройств........................................................................................................от 300р
+					 	  	</label>
+					 		</p>
+					 		<p class="it-idv-slider-radio">
+					 	  	<input type="checkbox" id="notb-4" name="radio-group" value="400">
+					 	  	<label for="notb-4">
+					 			Чистка пыли внутри корпуса ноутбука / нетбука.................................................................................................400р
+					 	  	</label>
+					 		</p>
+						</div>
+					</form>
+					<!-- ЛОКАЛЬНЫЕ ВЫЧ. СЕТИ -->
+					<form action="#" class="it-idv-slider" style="display: none;" value="200">
+						<div class="it-idv-slider-item">
+							<p class="it-idv-slider-radio">
+					 	  	<input type="checkbox" id="local-1" name="radio-group" value="200">
+					 	  	<label for="local-1">
+					 			Проектирование малой проводной/<br>
+								беспроводной Wi-Fi локальной вычислительной сети......................................................................................200р
+					 	  	</label>
+					 		</p>
+					 		<p class="it-idv-slider-radio">
+					 	  	<input type="checkbox" id="local-2" name="radio-group" value="700">
+					 	  	<label for="local-2">
+					 			Базовая настройка Wi-Fi точки доступа/<br>
+								беспроводного маршрутизатора..................................................................................................................................700р
+					 	  	</label>
+					 		</p>
+					 		<p class="it-idv-slider-radio">
+					 	  	<input type="checkbox" id="local-3" name="radio-group" value="300">
+					 	  	<label for="local-3">
+					 			Базовая настройка модема 3G/4G.................................................................................................................................300р
+					 	  	</label>
+					 		</p>
+					 		<p class="it-idv-slider-radio">
+					 	  	<input type="checkbox" id="local-4" name="radio-group" value="50">
+					 	  	<label for="local-4">
+					 			Настройка сетевого подключения ПК к ЛВС / Интернет.......................................................................................50р
+					 	  	</label>
+					 		</p>
+					 		<p class="it-idv-slider-radio">
+					 	  	<input type="checkbox" id="local-5" name="radio-group" value="50">
+					 	  	<label for="local-5">
+					 			Настойка беспроводного сетевого подключения ПК к ЛВС / Интернет.......................................................50р
+					 	  	</label>
+					 		</p>
+					 		<p class="it-idv-slider-radio">
+					 	  	<input type="checkbox" id="local-6" name="radio-group" value="50">
+					 	  	<label for="local-6">
+					 			Обжимка кабеля UTP (витая пара)....................................................................................................................................50р
+					 	  	</label>
+					 		</p>
+					 		<p class="it-idv-slider-radio">
+					 	  	<input type="checkbox" id="local-7" name="radio-group" value="40">
+					 	  	<label for="local-7">
+					 			Прокладка кабеля UTP (витая пара)................................................................................................................................40р
+					 	  	</label>
+					 		</p>
+						</div>
+						<div class="it-idv-slider-item">
+							<p class="it-idv-slider-radio">
+					 	  	<input type="checkbox" id="local-8" name="radio-group" value="150">
+					 	  	<label for="local-8">
+					 			Установка и подключение коммутатора......................................................................................................................150р
+					 	  	</label>
+					 		</p>
+					 		<p class="it-idv-slider-radio">
+					 	  	<input type="checkbox" id="local-9" name="radio-group" value="500">
+					 	  	<label for="local-9">
+					 			Установка / базовая настройка другого активного сетевого оборудования.......................................500р
+					 	  	</label>
+					 		</p>
+						</div>
+					</form>
+					<!-- /SLICK SLIDER -->
+				<div class="it-idv-price__line-2"></div>
+				<div class="it-idv-price-down">
+					<div class="it-idv-price-down__t">Общая цена: <span id="price-total" class="it-idv-price-down__t-m">0</span> р</div>
+					<div class="it-idv-price-down__button">Скачать прайс</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- /it-idv-price -->
+				<div class="it-idv-comment">
+					<div class="container">
+						<div class="it-idv-comment__headline">
+							<img id="msg" src="img/balloons/slider/i-msg-off.png" alt="изображение" onmouseover="ChangeImage('msg','img/balloons/slider/i-msg-on.png')" onmouseout="ChangeImage('msg','img/balloons/slider/i-msg-off.png')">
+							Оставьте отзыв
+							<p class="it-idv-comment__headline--black">в наших соц сетях</p>
+						</div>
+				<div class="balloons-comment__text">Нам будет очень приятно :)</div>
+				<!-- SLICK SLIDER -->
+				<div class="it-idv-slider-comment">
+					<!-- ITEM-1 -->
+						<div class="balloons-slider-item">
+							<div class="balloons-slider-profile">
+								<div class="it-idv-slider-profile__photo">
+									<img src="img/balloons/slider/rev/rev-1.png" alt="Екатерина">
+								</div>
+								<div class="balloons-slider-profile__name">
+									Екатерина Алексеевна
+								</div>
+							</div>
+							<div class="it-idv-slider__text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias est tempore quod odit, doloremque incidunt consequatur! Cum, harum. Accusamus vitae voluptatum praesentium provident ex laudantium rerum, sed facilis nesciunt officiis alias consequuntur inventore. Asperiores possimus mollitia repellat adipisci. Laborum non, laudantium ipsa beatae aliquam labore quis tempore ipsam expedita provident aspernatur facilis officiis, soluta dolores ea vel illo qui nostrum!Asperiores possimus mollitia repellat adipisci. Laborum non, laudantium ipsa beatae aliquam labore quis tempore ipsam expedita provident aspernatur facilis officiis, soluta.
+							</div>
+						</div>
+						<!-- /ITEM-1 -->
+						<!-- ITEM-2 -->
+						<div class="balloons-slider-item">
+							<div class="balloons-slider-profile">
+								<div class="it-idv-slider-profile__photo">
+									<img src="img/balloons/slider/rev/rev-1.png" alt="Екатерина">
+								</div>
+								<div class="balloons-slider-profile__name">
+									Илья Мэддисон
+								</div>
+							</div>
+							<div class="it-idv-slider__text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias est tempore quod odit, doloremque incidunt consequatur! Cum, harum. Accusamus vitae voluptatum praesentium provident ex laudantium rerum, sed facilis nesciunt officiis alias consequuntur inventore.
+							</div>
+						</div>
+						<!-- /ITEM-2 -->
+						<!-- ITEM-3 -->
+						<div class="balloons-slider-item">
+							<div class="balloons-slider-profile">
+								<div class="it-idv-slider-profile__photo">
+									<img src="img/balloons/slider/rev/rev-1.png" alt="Екатерина">
+								</div>
+								<div class="balloons-slider-profile__name">
+									Кто-то Там
+								</div>
+							</div>
+							<div class="it-idv-slider__text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias est tempore quod odit, doloremque incidunt consequatur! Cum, harum.
+							</div>
+						</div>
+						<!-- /ITEM-3 -->
+					</div>
+					<!-- /SLICK SLIDER -->
+					<div class="it-idv-other">
+								<div class="container">
+									<div class="balloons-other__headline">
+										<img id="smile" src="img/balloons/other/smile-off.png" alt="smile" onmouseover="ChangeImage('smile','img/balloons/other/smile-on.png')" onmouseout="ChangeImage('smile','img/balloons/other/smile-off.png')">
+										Или оставьте его
+										<p class="balloons-other__headline--blue">в такой форме</p>
+									</div>
+										<form class="balloons-other__bar">
+										  <input type="range" id="mood" value="66"/>
+										  <output for="mood"></output>
+										</form>
+									<div class="balloons-other__button">*клац*</div>
+								</div>
+					</div>
+				</div>
+		</div>
+		<div class="it-idv-contacts">
+				<div class="container">
+					<div class="contacts__headline">
+						<img src="img/main/founders/h-phone.png" alt="phone">
+						<span class="contacts__headline--blue">Свяжитесь</span> с нами
+					</div>
+					<div class="contacts-founders">
+						<div class="contacts-founders__first">
+							<img src="img/main/founders/f-founder.png" alt="Директор">
+						</div>
+						<div class="contacts-founders-m-desc__first">
+							Генеральный директор
+							<p>Овчинников Денис Александрович</p>
+						</div>
+						<div class="contacts-founders-m-icon__first">
+							<a href="mailto:mail@mail.ru"><img src="img/main/icons/black-mail.png" alt="иконка"></a>
+							<a href="tel:+79605344782"><img src="img/main/icons/black-phone.png" alt="иконка"></a>
+						</div>
+						<div class="contacts-founders__second">
+							<img src="img/main/founders/s-founder.png" alt="Заместитель Директора">
+						</div>
+						<div class="contacts-founders-m-desc__second">
+							Заместитель
+							<p>Бартенев Сергей Васильевич</p>
+						</div>
+						<div class="contacts-founders-m-icon__second">
+							<a href="mailto:mail@mail.ru"><img src="img/main/icons/black-mail.png" alt="иконка"></a>
+							<a href="tel:+79605344782"><img src="img/main/icons/black-phone.png" alt="иконка"></a>
+						</div>
+					</div>
+					<div class="contacts-founders-desc">
+						<div class="contacts-founders-desc__first">
+							Генеральный директор
+							<p>Овчинников Денис Александрович</p>
+						</div>
+						<div class="contacts-founders-desc__second">
+							Заместитель
+							<p>Бартенев Сергей Васильевич</p>
+						</div>
+					</div>
+					<div class="contacts-founders-icon">
+						<div class="contacts-founders-icon__first">
+							<a href="mailto:mail@mail.ru"><img src="img/main/icons/black-mail.png" alt="иконка"></a>
+							<a href="tel:+79605344782"><img src="img/main/icons/black-phone.png" alt="иконка"></a>
+						</div>
+						<div class="contacts-founders-icon__second">
+							<a href="mailto:mail@mail.ru"><img src="img/main/icons/black-mail.png" alt="иконка"></a>
+							<a href="tel:+79605344782"><img src="img/main/icons/black-phone.png" alt="иконка"></a>
+						</div>
+					</div>
+					</div>
+		</div>
+		<div class="request it-idv-request-form">
+			<div class="container">
+				<div class="request__headline">
+					<img src="img/main/icons/mailto.png" alt="иконка">
+					Оставьте заявку
+					<p class="request__headline--black">на сайте</p>
+
+				</div>
+				<div class="request__about">
+					Заявки на сайте принимаются<br>
+					только на IT-обслуживание
+				</div>
+				<form>
+					<div class="request-form">
+						<div class="request-form-c1">
+							<div class="request-form__bg">
+								<input class="request-form__text" type="text" placeholder="ФИО" required>
+							</div>
+							<br>
+							<div class="request-form__bg">
+								<input class="request-form__text" type="text" placeholder="ТЕЛЕФОН" required>
+							</div>
+							<div class="request-form__bg">
+								<input class="request-form__text request-form__date" type="text" placeholder="ДАТА ПРИБЫТИЯ МАСТЕРА" required>
+							</div>
+						</div>
+						<div class="request-form-c2">
+							<div class="request-form__order">
+								<textarea class="request-form__text" placeholder="ВАШ ЗАКАЗ" type="text" required></textarea>
+							</div>
+						</div>
+					</div>
+					<button class="request-form__button">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-content__headline">© 2019 ООО «Цветной Шар»</div>
+					<div class="footer-content__soc">
+						<a href="#"><img src="img/footer/footer-vk.png" alt="Вконтакте"></a>
+						<a href="#"><img src="img/footer/footer-inst.png" alt="Инстаграм"></a>
+					</div>
+				</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/smile-bar.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		// Slick Slider
+		$('.it-idv-slider').slick({
+			arrows: true,
+			autoplay: true,
+			autoplaySpeed: 3500
+		});
+		$('.it-idv-slider-comment').slick({
+			arrows: true,
+			autoplay: true,
+			autoplaySpeed: 3500
+		});
+		// Viborka
+		let divs = document.querySelectorAll('.it-idv-slider');
+		let words = document.querySelectorAll('.it-idv-price-list__item');
+		function firstplay(i){
+			for (var count = 0; count<divs.length; count++)
+			  {
+			    divs[count].style.display = 'none';
+			    words[count].style.color = '#4d4d4d';
+			    words[count].style.transform = 'scale(1,1)';
+			  }
+			words[i].style.transform = 'scale(1.15,1.15)';
+			words[i].style.color = '#81c9ea';
+			divs[i].style.display = 'block';
+			$(divs[i]).slick('unslick');
+			$(divs[i]).slick({
+				arrows: true,
+				autoplay: true,
+				autoplaySpeed: 3500
+		});
+		}
+		// ПРОВЕРКА CHECKBOX
+		document.addEventListener('change', function(e) {
+	  if (e.target.tagName === 'INPUT' && e.target.type === 'checkbox') {
+	    const cb = [...document.querySelectorAll('input[type="checkbox"]:checked')];
+	    const sum = cb.reduce((acc, n) => acc + +n.value, 0);
+	    document.getElementById("price-total").childNodes[0].textContent = sum;
+	  }
+	});
+	</script>
+</body>
+</html>

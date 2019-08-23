@@ -1,0 +1,149 @@
+///////////  HEADER  ///////////
+
+.header
+	width: 100%
+	border-bottom: 3px solid #e3e3e3
+	.container
+		display: flex
+		height: 72px
+		align-items: center
+
+.container
+	max-width: 1120px
+	margin: 0 auto
+	padding-right: 10px
+	padding-left: 10px
+
+.header-menu
+	&__list
+		list-style: none
+		display: flex
+		padding: 0px
+		margin-top: 8px
+		margin-left: 81px
+	&__item
+		margin-left: 52px
+		position: relative
+		&:first-child
+			margin-left: 0px
+		&:last-child
+			&:after, &:before 
+				content: ""
+				position: absolute
+				top: -15px
+				right: 0
+				width: 3px
+				height: 0px
+				background-color: #e3e3e3
+				border-radius: 3px
+				transition: 0.1s 
+				-webkit-transition: 0.1s
+				-moz-transition: 0.1s
+				-ms-transition: 0.1s
+				-o-transition: 0.1s
+			&:before
+				left: 0
+		&:hover
+			.header-submenu
+				-webkit-transform: scaleY(1)
+				-ms-transform: scaleY(1)
+				transform: scaleY(1)
+			&:after, &:before
+				height: 49px
+
+	&__link
+		text-decoration: none
+		text-transform: uppercase
+		color: $l-black
+		font-family: $jura
+		font-size: 30px
+		font-weight: 400
+		white-space: nowrap
+		display: block
+		&:before
+			content: ""
+			position: absolute
+			bottom: 0
+			right: 0
+			width: 0
+			height: 3px
+			border-radius: 2px
+			background-color: rgba(234, 255, 0, 0.8)
+			transition: 0.3s
+			-webkit-transition: 0.3s
+			-moz-transition: 0.3s
+			-ms-transition: 0.3s
+			-o-transition: 0.3s
+		&:hover
+			&:before
+				width: 100%
+		&:focus
+			&:before
+				top: 50%
+				width: 100%
+
+.header-submenu
+	-webkit-transform: scaleY(0)
+	-ms-transform: scaleY(0)
+	-webkit-transform-origin: 0 0
+	-ms-transform-origin: 0 0
+	transform-origin: 0 0
+	transform: scaleY(0)
+	position: absolute
+	width: 100% - 2.4
+	top: 100%
+	left: 0
+	z-index: 10
+	list-style: none
+	padding-left: 0px
+	text-align: center
+	background-color: white
+	border-left: 3px solid #e3e3e3
+	border-right: 3px solid #e3e3e3
+	border-bottom: 3px solid #e3e3e3
+	-webkit-transition: 0.5s
+	-moz-transition: 0.5s
+	-o-transition: 0.5s
+	transition: 0.5s
+	&__item
+		padding-top: 8px
+		&:last-child
+			padding-top: 4px
+			padding-bottom: 13px
+	&__link
+		color: $l-black
+		font-family: $jura
+		font-size: 20px
+		font-weight: 400
+		text-transform: uppercase
+		text-decoration: none
+		&:hover
+			color: #c7d24d
+			-webkit-transition: 0.5s
+			-moz-transition: 0.5s
+			-o-transition: 0.5s
+			transition: 0.5s
+
+.header__phone
+	color: $l-black
+	font-family: $jura
+	font-size: 30px
+	font-weight: 400
+	text-transform: uppercase
+	margin-left: 54px
+	white-space: nowrap
+	text-align: center
+	line-height: 23px
+	cursor: default
+	&-number
+		a
+			text-decoration: none
+			color: $l-black
+
+.header__mobile
+	display: none
+.header__m-logo
+	display: none
+
+
+///////////  HEADER-END  ///////////

@@ -1,0 +1,53 @@
+
+.service-select
+	height: 680px
+	&__headline
+		color: #4c4c4c
+		font-family: $jura
+		font-size: 72px
+		font-weight: 400
+		text-transform: uppercase
+		text-align: center
+		margin-top: 65px
+		&--blue
+			color: #81c9ea
+	&-s
+		display: flex
+		justify-content: space-between
+		margin-top: 30px
+		&__individual
+			height: 329px
+			width: 488px
+			background-image: url(../img/service-selection/ind.png)
+			background-repeat: no-repeat
+			cursor: pointer
+			&:hover
+				transform: scale(1.02,1.02)
+				transition: 0.3s
+		&__entity
+			height: 303px
+			width: 417px
+			background-image: url(../img/service-selection/entity.png)
+			background-repeat: no-repeat
+			margin-right: 30px
+			cursor: pointer
+			&:hover
+				transform: scale(1.02,1.02)
+				transition: 0.3s
+	&-text
+		margin-top: 24px
+		display: flex
+		justify-content: space-between
+		&__individual, &__entity
+			text-align: center
+			font-family: $jura
+			font-size: 36px
+			font-weight: 400
+			text-transform: uppercase
+			color: $l-gray
+			text-decoration: none
+			cursor: default
+		&__individual
+			width: 488px
+		&__entity
+			width: 417px

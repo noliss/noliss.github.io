@@ -944,12 +944,12 @@
   font-weight: 400;
   text-align: center;
 }
-.it-idv-price__line {
+.it-idv-price__line, .it-idv-price__line-2 {
   width: 1073px;
   height: 5px;
   background-color: #81c9ea;
 }
-.it-idv-price__line:first-child {
+.it-idv-price__line:first-child, .it-idv-price__line-2:first-child {
   margin-top: 24px;
 }
 .it-idv-price-list {
@@ -1011,6 +1011,9 @@
 }
 .it-idv-slider .slick-next {
   right: 40px;
+}
+.it-idv-slider .slick-prev {
+  left: -40px;
 }
 .it-idv-slider-radio {
   margin-top: 20px;
@@ -1122,7 +1125,6 @@
   font-family: "Jura", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  width: 1003px;
   height: 188px;
   margin-left: 80px;
   margin-top: 20px;
@@ -1183,6 +1185,43 @@
   color: #2330de;
 }
 
+@media (min-width: 985px) and (max-width: 1139px) {
+  .it-idv-price-select {
+    margin-left: 130px;
+  }
+  .it-idv-price__line-2 {
+    margin-left: 160px;
+  }
+  .it-idv-price-down__button {
+    width: 105px;
+    height: 18px;
+    font-size: 10px;
+    margin-right: 170px;
+    padding-top: 8px;
+  }
+  .it-idv-price-down__t {
+    font-size: 19px;
+  }
+  .it-idv-price .it-idv-slider {
+    margin-left: 130px;
+  }
+  .it-idv-price .it-idv-slider-radio label {
+    font-size: 13px;
+  }
+  .it-idv-price .slick-track {
+    width: 600px;
+  }
+  .it-idv-price .slick-next {
+    right: 140px;
+  }
+  .it-idv-price .slick-next .slick-prev {
+    left: 35px;
+  }
+
+  .it-idv-comment__headline {
+    font-size: 52px;
+  }
+}
 @media screen and (max-width: 1140px) {
   .header .container {
     justify-content: center;
@@ -1192,6 +1231,14 @@
   }
   .header-menu__link {
     margin-left: -20px;
+  }
+  .header-menu__item:hover .header-submenu {
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+  }
+  .header-menu__item:hover:after, .header-menu__item:hover:before {
+    height: 0px;
   }
   .header__logo img {
     width: 135px;
@@ -1210,6 +1257,7 @@
   }
 
   .contacts__headline {
+    padding-top: 75px;
     font-size: 52px;
   }
   .contacts__headline img {
@@ -1272,6 +1320,168 @@
   }
   .request-form__text[placeholder="ВАШ ЗАКАЗ"] {
     width: 327px;
+  }
+
+  .balloons-about__headline {
+    padding-top: 85px;
+    font-size: 52px;
+  }
+  .balloons-about__text {
+    width: 760px;
+    font-size: 22px;
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+
+  .balloons-can__headline {
+    font-size: 52px;
+  }
+  .balloons-can__headline img {
+    width: 32px;
+    height: 51px;
+  }
+  .balloons-can-ctn {
+    margin-top: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .balloons-can__bg {
+    height: 380px;
+    width: 320px;
+  }
+  .balloons-can__bg:last-child {
+    margin-top: -75px;
+  }
+  .balloons-can__img img {
+    margin-top: 20px;
+    width: 138px;
+    height: 138px;
+  }
+
+  .balloons-gallery__headline {
+    padding-top: 95px;
+  }
+  .balloons-gallery-photo, .balloons-gallery-photo-d {
+    justify-content: center;
+  }
+  .balloons-gallery-photo__item:last-child, .balloons-gallery-photo-d__item:last-child {
+    display: none;
+  }
+
+  .balloons-comment__headline {
+    font-size: 52px;
+    padding-top: 140px;
+  }
+  .balloons-comment__text {
+    font-size: 27px;
+  }
+
+  .balloons-slider {
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+  .balloons-slider__text {
+    margin-left: 0px;
+  }
+
+  .slick-prev {
+    left: 15px;
+  }
+
+  .balloons-other {
+    font-size: 18px;
+  }
+  .balloons-other__headline {
+    padding-top: 95px;
+    font-size: 52px;
+  }
+
+  .balloons-contacts__headline {
+    font-size: 52px;
+    font-weight: 500;
+    padding-top: 95px;
+  }
+
+  .service-select__headline {
+    font-size: 52px;
+    font-weight: 500;
+  }
+
+  .it-idv-service__headline {
+    font-size: 52px;
+  }
+  .it-idv-service__text {
+    font-size: 22px;
+  }
+
+  .it-ent-details__headline {
+    font-size: 52px;
+  }
+  .it-ent-details__headline img {
+    width: 53px;
+    height: 51px;
+  }
+  .it-ent-details__text {
+    font-size: 27px;
+  }
+
+  .it-idv-service__text {
+    width: 760px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .it-idv-price__headline {
+    font-size: 52px;
+  }
+  .it-idv-price__text {
+    font-size: 27px;
+  }
+  .it-idv-price-select {
+    margin-left: 130px;
+  }
+  .it-idv-price__line, .it-idv-price__line-2 {
+    width: 679px;
+  }
+  .it-idv-price__line-2 {
+    margin-left: 130px;
+  }
+  .it-idv-price-list {
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-left: 25px;
+  }
+  .it-idv-price-list__item {
+    font-size: 9px;
+  }
+  .it-idv-price-down__button {
+    width: 105px;
+    height: 18px;
+    font-size: 10px;
+    margin-right: 170px;
+    padding-top: 8px;
+  }
+  .it-idv-price-down__t {
+    font-size: 19px;
+  }
+  .it-idv-price .it-idv-slider {
+    margin-left: 130px;
+  }
+  .it-idv-price .it-idv-slider-radio label {
+    font-size: 13px;
+  }
+  .it-idv-price .slick-track {
+    width: 600px;
+  }
+  .it-idv-price .slick-next {
+    right: 140px;
+  }
+  .it-idv-price .slick-next .slick-prev {
+    left: 35px;
+  }
+
+  .it-idv-comment__headline {
+    font-size: 52px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -1448,77 +1658,6 @@
   }
   .request-form-c1 {
     margin: 0 auto;
-  }
-}
-@media screen and (max-width: 1140px) {
-  .balloons-about__headline {
-    font-size: 52px;
-  }
-  .balloons-about__text {
-    font-size: 26px;
-  }
-
-  .balloons-can__headline {
-    font-size: 52px;
-  }
-  .balloons-can__headline img {
-    width: 32px;
-    height: 51px;
-  }
-  .balloons-can-ctn {
-    margin-top: 35px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .balloons-can__bg {
-    height: 380px;
-    width: 320px;
-  }
-  .balloons-can__bg:last-child {
-    margin-top: -55px;
-  }
-  .balloons-can__img img {
-    margin-top: 20px;
-    width: 138px;
-    height: 138px;
-  }
-
-  .balloons-gallery__headline {
-    padding-top: 95px;
-  }
-  .balloons-gallery-photo, .balloons-gallery-photo-d {
-    justify-content: center;
-  }
-  .balloons-gallery-photo__item:last-child, .balloons-gallery-photo-d__item:last-child {
-    display: none;
-  }
-
-  .balloons-comment__headline {
-    font-size: 52px;
-    padding-top: 140px;
-  }
-  .balloons-comment__text {
-    font-size: 27px;
-  }
-
-  .balloons-slider {
-    margin: 0 auto;
-    margin-top: 40px;
-  }
-  .balloons-slider__text {
-    margin-left: 0px;
-  }
-
-  .balloons-other {
-    font-size: 18px;
-  }
-  .balloons-other__headline {
-    font-size: 52px;
-  }
-
-  .balloons-contacts__headline {
-    font-size: 52px;
-    font-weight: 500;
   }
 }
 
