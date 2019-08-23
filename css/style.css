@@ -703,11 +703,10 @@
 }
 
 .balloons-slider {
-  width: 1136px;
   height: 428px;
   background-image: url(../img/balloons/slider/slider-bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   margin-top: 70px;
 }
@@ -1287,7 +1286,7 @@
     display: none;
     position: absolute;
     right: 0%;
-    top: 13%;
+    top: 12.8%;
     text-align: center;
     border: 2px solid #e3e3e3;
     background-color: #ffffff;
@@ -1449,6 +1448,77 @@
   }
   .request-form-c1 {
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .balloons-about__headline {
+    font-size: 52px;
+  }
+  .balloons-about__text {
+    font-size: 26px;
+  }
+
+  .balloons-can__headline {
+    font-size: 52px;
+  }
+  .balloons-can__headline img {
+    width: 32px;
+    height: 51px;
+  }
+  .balloons-can-ctn {
+    margin-top: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .balloons-can__bg {
+    height: 380px;
+    width: 320px;
+  }
+  .balloons-can__bg:last-child {
+    margin-top: -55px;
+  }
+  .balloons-can__img img {
+    margin-top: 20px;
+    width: 138px;
+    height: 138px;
+  }
+
+  .balloons-gallery__headline {
+    padding-top: 95px;
+  }
+  .balloons-gallery-photo, .balloons-gallery-photo-d {
+    justify-content: center;
+  }
+  .balloons-gallery-photo__item:last-child, .balloons-gallery-photo-d__item:last-child {
+    display: none;
+  }
+
+  .balloons-comment__headline {
+    font-size: 52px;
+    padding-top: 140px;
+  }
+  .balloons-comment__text {
+    font-size: 27px;
+  }
+
+  .balloons-slider {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .balloons-slider__text {
+    margin-left: 0px;
+  }
+
+  .balloons-other {
+    font-size: 18px;
+  }
+  .balloons-other__headline {
+    font-size: 52px;
+  }
+
+  .balloons-contacts__headline {
+    font-size: 52px;
+    font-weight: 500;
   }
 }
 
