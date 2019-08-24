@@ -63,7 +63,6 @@
 		height: 449px
 		position: relative
 		box-shadow: 0 5px 24px 1px rgba(93, 93, 93, 0.5)
-		background-color: #ffffff
 		margin-left: 30px
 		&:first-child
 			margin-left: 0px
@@ -81,6 +80,8 @@
 		position: absolute
 		left: 27%
 		top: 50%
+	.slick-slider
+		display: none
 
 .balloons-gallery
 	height: 860px
@@ -110,15 +111,15 @@
 		margin-top: 44px
 		&__item
 			width: 263px
-			margin-right: 26px
 			height: 174px
 			box-shadow: 0 0 9px 1px rgba(124, 130, 207, 0.5)
 			border-radius: 15px
 			background-color: #2330de
 			position: relative
 			z-index: 1
+			margin-left: 15px
 			&:first-child
-				margin-left: 0
+				margin-left: 0px
 		&__loop
 			background-image: url(../img/balloons/gallery/loop.png)
 			background-repeat: no-repeat
@@ -207,7 +208,6 @@
 			font-size: 30px
 			font-weight: 500
 	&__text
-		width: 1003px
 		height: 188px
 		color: $l-gray
 		font-family: $jura

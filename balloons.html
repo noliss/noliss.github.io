@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<title>Шары</title>
 	<!-- RedHelper -->
 	<script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async" 
@@ -85,6 +86,7 @@
 						подход
 					</div>
 					<div class="main-screen__balls main-screen__balls--red"><a href="balloons.html">Оформление воздушными шарами</a></div>
+					<div class="main-screen__it-mobile">IT-обслуживание</div>
 				</div>
 			</div>
 		</div>
@@ -107,6 +109,46 @@
 					<img id="lamp" src="img/balloons/we_can/lamp-off.png" alt="изображение" onmouseover="ChangeImage('lamp','img/balloons/we_can/lamp-on.png')" onmouseout="ChangeImage('lamp','img/balloons/we_can/lamp-off.png')">
 					Наши <span class="balloons-can__headline--red">возможности</span>
 				</div>
+				<div class="balloons-can__slider-m">
+					<!-- MOBILE SLIDER -->
+						<div class="balloons-can__slider-m--item">
+							<div class="balloons-can__bg">
+								<div class="balloons-can__hl">Разрабатываем</div>
+								<div class="balloons-can__text">
+									самые свежие<br>
+									и нестандартные<br> решения на заказ
+								</div>
+								<div class="balloons-can__img">
+									<img src="img/balloons/we_can/dev.png" alt="разрабатываем">
+								</div>
+							</div>
+						</div>
+						<div class="balloons-can__slider-m--item">
+							<div class="balloons-can__bg">
+								<div class="balloons-can__hl">Адаптируем</div>
+								<div class="balloons-can__text">
+									эксклюзивный<br> декор<br> оформлений<br>
+									к формату<br> праздников<br>
+								</div>
+								<div class="balloons-can__img">
+									<img src="img/balloons/we_can/adapt.png" alt="адаптируем">
+								</div>
+							</div>
+						</div>
+						<div class="balloons-can__slider-m--item">
+							<div class="balloons-can__bg">
+								<div class="balloons-can__hl">Создаем</div>
+								<div class="balloons-can__text">
+									<br>смелые проекты<br> декора,<br>
+									привлекая<br> собственную<br> творческую фантазию
+								</div>
+								<div class="balloons-can__img" id="last--img">
+									<img src="img/balloons/we_can/create.png" alt="создаем">
+								</div>
+							</div>
+						</div>
+			</div>
+				<!-- MOBILE SLIDER -->
 				<div class="balloons-can-ctn">
 					<div class="balloons-can__bg">
 						<div class="balloons-can__hl">Разрабатываем</div>
@@ -361,6 +403,22 @@
 			arrows: true,
 			autoplay: true,
 			autoplaySpeed: 3500
+		});
+		$('.balloons-can__slider-m').slick({
+					arrows: true
+				});
+		var menuButton = $('.header__mobile');
+			var menu = $('.header-menu');
+			$(document).ready(function(){
+			menuButton.on('click', function(event){
+				if (menu[0].style.display == 'flex')
+					{
+						menu[0].style.display = 'none';
+					}
+				else{
+					menu[0].style.display = 'flex';
+				}
+			});
 		});
 
 

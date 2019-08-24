@@ -216,7 +216,7 @@
 
 .contacts {
   height: 750px;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 .contacts__headline {
   justify-content: center;
@@ -234,7 +234,7 @@
   margin-right: 18px;
 }
 .contacts-founders {
-  margin-top: 45px;
+  margin-top: 25px;
   display: flex;
   justify-content: space-between;
 }
@@ -553,7 +553,6 @@
   height: 449px;
   position: relative;
   box-shadow: 0 5px 24px 1px rgba(93, 93, 93, 0.5);
-  background-color: #ffffff;
   margin-left: 30px;
 }
 .balloons-can__bg:first-child {
@@ -576,6 +575,9 @@
   position: absolute;
   left: 27%;
   top: 50%;
+}
+.balloons-can .slick-slider {
+  display: none;
 }
 
 .balloons-gallery {
@@ -613,16 +615,16 @@
 }
 .balloons-gallery-photo__item, .balloons-gallery-photo-d__item {
   width: 263px;
-  margin-right: 26px;
   height: 174px;
   box-shadow: 0 0 9px 1px rgba(124, 130, 207, 0.5);
   border-radius: 15px;
   background-color: #2330de;
   position: relative;
   z-index: 1;
+  margin-left: 15px;
 }
 .balloons-gallery-photo__item:first-child, .balloons-gallery-photo-d__item:first-child {
-  margin-left: 0;
+  margin-left: 0px;
 }
 .balloons-gallery-photo__loop, .balloons-gallery-photo-d__loop {
   background-image: url(../img/balloons/gallery/loop.png);
@@ -730,7 +732,6 @@
   font-weight: 500;
 }
 .balloons-slider__text {
-  width: 1003px;
   height: 188px;
   color: #4c4c4c;
   font-family: "Jura", sans-serif;
@@ -817,7 +818,7 @@
 }
 
 .service-select {
-  height: 680px;
+  height: 780px;
 }
 .service-select__headline {
   color: #4c4c4c;
@@ -834,7 +835,7 @@
 .service-select-s {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .service-select-s__individual {
   height: 329px;
@@ -1364,8 +1365,16 @@
   .balloons-gallery-photo, .balloons-gallery-photo-d {
     justify-content: center;
   }
+  .balloons-gallery-photo__item, .balloons-gallery-photo-d__item {
+    width: 237px;
+    height: 168px;
+  }
   .balloons-gallery-photo__item:last-child, .balloons-gallery-photo-d__item:last-child {
     display: none;
+  }
+  .balloons-gallery-photo__item a img, .balloons-gallery-photo-d__item a img {
+    width: 237px;
+    height: 168px;
   }
 
   .balloons-comment__headline {
@@ -1563,6 +1572,7 @@
     height: 800px;
   }
   .contacts__headline {
+    padding-top: 25px;
     font-size: 26px;
     font-weight: 500;
   }
@@ -1573,7 +1583,6 @@
   }
   .contacts-founders {
     margin: 0px;
-    margin-top: 25px;
     display: block;
   }
   .contacts-founders__first, .contacts-founders__second {
@@ -1658,6 +1667,177 @@
   }
   .request-form-c1 {
     margin: 0 auto;
+  }
+
+  .balloons-bg {
+    height: 300px;
+  }
+
+  .balloons-about__headline {
+    font-size: 30px;
+  }
+  .balloons-about__text {
+    font-size: 17px;
+    width: 287px;
+  }
+
+  .balloons-can__headline {
+    font-size: 30px;
+  }
+  .balloons-can__headline img {
+    width: 22px;
+    height: 35px;
+    margin-left: -15px;
+  }
+  .balloons-can-ctn {
+    display: none;
+  }
+  .balloons-can .slick-slider {
+    display: block;
+  }
+
+  .balloons-can__slider-m {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 290px;
+  }
+  .balloons-can__slider-m .slick-next {
+    right: 30px;
+  }
+  .balloons-can__slider-m .slick-prev {
+    left: 10px;
+  }
+
+  .balloons-can__slider-m--item .balloons-can__bg {
+    margin-top: 0px;
+    margin-left: 0px;
+    box-shadow: none;
+  }
+  .balloons-can__slider-m--item .balloons-can__hl, .balloons-can__slider-m--item .balloons-can__text {
+    font-size: 23px;
+    width: 292px;
+  }
+  .balloons-can__slider-m--item .balloons-can__img[id='last--img'] {
+    margin-top: 30px;
+  }
+  .balloons-can__slider-m--item .balloons-can__img {
+    left: 25%;
+    width: 292px;
+  }
+  .balloons-can__slider-m--item .balloons-can__img img {
+    width: 130px;
+    height: 139px;
+  }
+
+  .balloons-gallery__headline {
+    padding-top: 0;
+    font-size: 30px;
+  }
+  .balloons-gallery__headline img {
+    width: 44px;
+    height: 26px;
+    margin-left: -55px;
+  }
+  .balloons-gallery__text {
+    font-size: 18px;
+  }
+  .balloons-gallery-photo, .balloons-gallery-photo-d {
+    display: block;
+    margin-top: 0px;
+  }
+  .balloons-gallery-photo__item, .balloons-gallery-photo-d__item {
+    margin-left: auto;
+    margin-right: auto;
+    width: 223px;
+    height: 154px;
+    margin-top: 13px;
+  }
+  .balloons-gallery-photo__item:first-child, .balloons-gallery-photo-d__item:first-child {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .balloons-gallery-photo__item:nth-child(3), .balloons-gallery-photo-d__item:nth-child(3) {
+    display: none;
+  }
+  .balloons-gallery-photo__item a img, .balloons-gallery-photo-d__item a img {
+    width: 223px;
+    height: 154px;
+  }
+  .balloons-gallery__button {
+    margin-top: 17px;
+    width: 170px;
+    height: 35px;
+    padding-top: 15px;
+  }
+
+  .balloons-comment .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .balloons-comment__headline {
+    font-size: 30px;
+    padding-top: 75px;
+  }
+  .balloons-comment__headline img {
+    width: 41px;
+    height: 35px;
+    margin-left: -35px;
+  }
+  .balloons-comment__text {
+    font-size: 18px;
+  }
+
+  .balloons-slider {
+    height: 428px;
+    background-size: cover;
+  }
+  .balloons-slider-profile {
+    display: block;
+    text-align: center;
+  }
+  .balloons-slider-profile__photo {
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid #b1c3f3;
+  }
+  .balloons-slider-profile__name {
+    margin-left: 0;
+  }
+  .balloons-slider__text {
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 230px;
+    text-align: center;
+  }
+  .balloons-slider .slick-prev {
+    left: 15px;
+  }
+  .balloons-slider .slick-next {
+    right: 45px;
+  }
+
+  .balloons-other__headline {
+    font-size: 35px;
+    padding-top: 0px;
+  }
+  .balloons-other__headline img {
+    width: 45px;
+    height: 45px;
+    margin-left: -15px;
+  }
+  .balloons-other__bar input, .balloons-other__bar output {
+    font-size: 34px;
+  }
+
+  .balloons-contacts__headline {
+    font-size: 30px;
+    padding-top: 0px;
+  }
+  .balloons-contacts__headline img {
+    width: 22px;
+    height: 35px;
   }
 }
 
