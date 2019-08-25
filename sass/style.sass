@@ -261,6 +261,7 @@
 @media screen and (min-width: 769px) and (max-width: 810px)
 	.it-idv-price	.it-idv-slider
 		margin-left: 40px
+////////////////////////////////////////////// MOBILE ///////////////////////////////////////////////////////////////////////////
 @media screen and (min-width: 320px) and (max-width: 768px)
 	.header
 		.container
@@ -637,6 +638,11 @@
 			.slick-prev
 				&:before
 					display: none
+@media screen and (min-width: 321px) and (max-width: 768px)
+	.it-idv-price
+		&-list
+			&__item
+				width: 35%
 @media screen and (min-width: 345px) and (max-width: 768px)
 	.it-idv-slider
 		margin-left: 20px
@@ -651,6 +657,11 @@
 		&-down
 			&__button
 				margin-right: 80px
+		&-list
+			&__item
+				width: 25%
+				&:nth-child(3)
+					padding-top: 0px
 @media screen and (min-width: 440px) and (max-width: 768px)
 	.it-idv-price
 		&__line, &__line-2
@@ -683,3 +694,9 @@
 	.it-idv-price
 		&__line, &__line-2
 			width: 610px
+/////////// TW-SLIDER/////////////////////
+@media screen and (min-width: 320px) and (max-width: 570px)
+	.tw-slider
+		display: none
+	.tw-slider-m
+		display: block
