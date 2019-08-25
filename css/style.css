@@ -1448,7 +1448,7 @@
   }
 
   .it-idv-service__text {
-    width: 760px;
+    width: auto;
     margin: 0 auto;
     margin-top: 50px;
   }
@@ -1532,7 +1532,7 @@
     display: none;
     position: absolute;
     right: 0%;
-    top: 99%;
+    top: 99.5%;
     text-align: center;
     border: 2px solid #e3e3e3;
     background-color: #ffffff;
@@ -1709,6 +1709,7 @@
   .balloons-about__text {
     font-size: 17px;
     width: auto;
+    margin-left: 20px;
   }
 
   .balloons-can__headline {
@@ -1910,17 +1911,21 @@
   .it-idv-bg {
     height: 320px;
   }
-
-  .it-idv-service {
-    height: 500px;
-  }
-  .it-idv-service__headline {
+  .it-idv-bg__headline {
     padding-top: 60px;
     font-size: 30px;
   }
-  .it-idv-service__text {
+  .it-idv-bg__text {
     font-size: 17px;
     width: auto;
+  }
+
+  .it-idv-service {
+    background-image: url(../img/it/individual/mobile/it-bg-m_1.png);
+  }
+  .it-idv-service__headline {
+    font-size: 32px;
+    padding-top: 50px;
   }
 
   .it-ent-details {
@@ -2013,6 +2018,51 @@
   }
   .it-idv-price .it-idv-slider .slick-prev:before {
     display: none;
+  }
+
+  .it-idv-comment__headline {
+    font-size: 30px;
+  }
+  .it-idv-comment__headline img {
+    width: 41px;
+    height: 35px;
+    margin-left: -25px;
+  }
+
+  .it-idv-slider__text {
+    margin-left: 30px;
+  }
+  .it-idv-slider-profile__name {
+    color: #4c4c4c;
+    font-family: "Jura", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+  }
+  .it-idv-slider-profile__photo {
+    margin: 0 auto;
+    width: 64px;
+    height: 65px;
+  }
+  .it-idv-slider-profile__photo img {
+    width: 64px;
+    height: 65px;
+  }
+
+  .it-idv-slider-comment .slick-prev {
+    left: -2px;
+  }
+  .it-idv-slider-comment .slick-next {
+    right: 25px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 950px) {
+  .service-select-s__individual, .service-select-s__entity {
+    width: 378px;
+    height: 260px;
+    background-size: contain;
+  }
+  .service-select-s__individual {
+    margin-left: 25px;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 768px) {
