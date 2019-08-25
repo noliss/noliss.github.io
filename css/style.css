@@ -1012,7 +1012,7 @@
 }
 
 .it-idv-slider {
-  height: 355px;
+  height: auto;
 }
 .it-idv-slider .slick-next {
   right: 40px;
@@ -1029,6 +1029,9 @@
   font-weight: 500;
   font-size: 20px;
   color: #4c4c4c;
+}
+.it-idv-slider-radio-m__total {
+  display: none;
 }
 .it-idv-slider [type="checkbox"] {
   opacity: 1;
@@ -1205,7 +1208,7 @@
     font-size: 19px;
   }
   .it-idv-price .it-idv-slider {
-    margin: 0 auto;
+    margin-left: 100px;
   }
   .it-idv-price .it-idv-slider-radio label {
     font-size: 13px;
@@ -1222,6 +1225,11 @@
 
   .it-idv-comment__headline {
     font-size: 52px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1140px) {
+  .it-idv-slider {
+    margin-left: 100px;
   }
 }
 @media screen and (max-width: 1140px) {
@@ -1493,6 +1501,16 @@
 
   .it-idv-comment__headline {
     font-size: 52px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 920px) {
+  .it-idv-price__line, .it-idv-price__line-2 {
+    width: 820px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 810px) {
+  .it-idv-price .it-idv-slider {
+    margin-left: 40px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -1914,16 +1932,134 @@
     font-size: 18px;
   }
   .it-idv-price__line, .it-idv-price__line-2 {
-    width: 580px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .it-idv-price__line-2 {
+    margin-top: 5px;
   }
   .it-idv-price-select {
     margin-left: 0px;
   }
+  .it-idv-price-list__item {
+    padding-top: 15px;
+  }
+  .it-idv-price-list__item:first-child {
+    padding-top: 0px;
+    margin-left: 26px;
+  }
+  .it-idv-price-list__item:nth-child(2) {
+    padding-top: 0px;
+  }
+  .it-idv-price-down__button {
+    margin-right: 15px;
+  }
+  .it-idv-price-down__t {
+    margin-right: 15px;
+    margin-top: 5px;
+    font-size: 17px;
+  }
+  .it-idv-price .it-idv-slider-radio {
+    margin-top: 0px;
+    margin-bottom: 2px;
+  }
+  .it-idv-price .it-idv-slider-radio-m {
+    display: none;
+  }
+  .it-idv-price .it-idv-slider-radio-m__total {
+    display: block;
+    color: #4c4c4c;
+    font-family: "Jura", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 22px;
+  }
+  .it-idv-price .it-idv-slider-radio label {
+    font-size: 10px;
+  }
+  .it-idv-price .it-idv-slider [type="checkbox"]:checked + label:before, .it-idv-price .it-idv-slider [type="checkbox"]:not(:checked) + label:before {
+    width: 14px;
+    height: 14px;
+    margin-top: 5px;
+  }
+  .it-idv-price .it-idv-slider [type="checkbox"]:checked + label, .it-idv-price .it-idv-slider [type="checkbox"]:not(:checked) + label {
+    padding-left: 22px;
+  }
+  .it-idv-price .it-idv-slider [type="checkbox"]:checked + label:after, .it-idv-price .it-idv-slider [type="checkbox"]:not(:checked) + label:after {
+    width: 10px;
+    height: 10px;
+    top: 9px;
+    left: 4px;
+  }
+  .it-idv-price .it-idv-slider .slick-next {
+    right: 35px;
+  }
+  .it-idv-price .it-idv-slider .slick-next:before {
+    font-size: 8px;
+  }
+  .it-idv-price .it-idv-slider .slick-prev:before {
+    display: none;
+  }
+}
+@media screen and (min-width: 345px) and (max-width: 768px) {
+  .it-idv-slider {
+    margin-left: 20px;
+  }
 
-  .it-idv-slider-radio label {
-    font-size: 12px;
+  .it-idv-price-down__button {
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 408px) and (max-width: 768px) {
+  .it-idv-slider {
+    margin-left: 60px;
+  }
+
+  .it-idv-price-down__button {
+    margin-right: 80px;
+  }
+}
+@media screen and (min-width: 440px) and (max-width: 768px) {
+  .it-idv-price__line, .it-idv-price__line-2 {
+    width: 380px;
+  }
+}
+@media screen and (min-width: 526px) and (max-width: 768px) {
+  .it-idv-price__line, .it-idv-price__line-2 {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 526px) and (max-width: 768px) {
+  .it-idv-slider {
+    margin-left: 95px;
+  }
+
+  .it-idv-price-down__button {
+    margin-right: 90px;
+  }
+  .it-idv-price-down__t {
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 680px) and (max-width: 768px) {
+  .it-idv-price__line, .it-idv-price__line-2 {
+    width: 540px;
+  }
+  .it-idv-price-down__button {
+    margin-right: 120px;
+  }
+  .it-idv-price-down__t {
+    margin-right: 50px;
+  }
+
+  .it-idv-slider {
+    margin-left: 95px;
+  }
+}
+@media screen and (min-width: 743px) and (max-width: 768px) {
+  .it-idv-price__line, .it-idv-price__line-2 {
+    width: 610px;
   }
 }
 
