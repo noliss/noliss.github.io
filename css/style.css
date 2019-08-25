@@ -1518,6 +1518,9 @@
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  .header {
+    position: relative;
+  }
   .header .container {
     justify-content: space-between;
   }
@@ -1529,7 +1532,7 @@
     display: none;
     position: absolute;
     right: 0%;
-    top: 12.8%;
+    top: 100%;
     text-align: center;
     border: 2px solid #e3e3e3;
     background-color: #ffffff;
