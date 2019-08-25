@@ -2097,10 +2097,10 @@
     height: 55px;
     margin-left: -30px;
   }
-  .tw-slider-m .twentytwenty-handle:before {
+  .tw-slider-m .twentytwenty-horizontal .twentytwenty-handle::before {
     bottom: 60%;
   }
-  .tw-slider-m .twentytwenty-handle:after {
+  .tw-slider-m .twentytwenty-horizontal .twentytwenty-handle::after {
     top: 60%;
   }
   .tw-slider-m .twentytwenty-left-arrow, .tw-slider-m .twentytwenty-right-arrow {
