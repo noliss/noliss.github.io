@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Выбор обслуживания</title>
 	<!-- RedHelper -->
 	<script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async" 
@@ -16,13 +17,16 @@
 <body>
 	<header class="header">
 		<div class="container">
+			<div class="header__m-logo">
+				<a href="index.html"><img src="img/mobile/m-logo.png" alt="m-logo"></a>
+			</div>
 			<div class="header__logo">
 				<a href="index.html"><img src="img/logo.png" alt="Цветной шар"></a>
 			</div>
 			<div class="header-menu">
 				<ul class="header-menu__list">
 					<li class="header-menu__item">
-						<a class="header-menu__link" href="index.html">Главная</a>
+						<a class="header-menu__link" href="#">Главная</a>
 					</li>
 					<li class="header-menu__item">
 						<a class="header-menu__link" href="balloons.html">Шары</a>
@@ -49,6 +53,9 @@
 					<a href="tel:+79605344782">+79605344782</a>
 				</div>
 			</div>
+			<i class="header__mobile">
+				<img src="img/mobile/m-menu-off.png" alt="menu">
+			</i>
 		</div>
 		<!-- Container -->
 	</header>
@@ -63,7 +70,9 @@
 				</div>
 				<div class="service-select-s">
 					<a href="individual.html"><div class="service-select-s__individual" onmouseover="TextOn('ind');" onmouseout="TextOff('ind');"></div></a>
+					<a href="individual.html" id="ind" class="service-select-s__individual--m">Физическое лицо</a>
 					<a href="entity.html"><div class="service-select-s__entity" onmouseover="TextOn('ent');" onmouseout="TextOff('ent');"></div></a>
+					<a href="entity.html" id="ent" class="service-select-s__entity--m">Юридическое лицо</a>
 				</div>
 				<div class="service-select-text">
 					<a href="individual.html" id="ind" class="service-select-text__individual">Физическое лицо</a>
