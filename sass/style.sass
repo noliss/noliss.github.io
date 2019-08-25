@@ -12,7 +12,6 @@
 @media (min-width: 985px) and (max-width: 1139px)
 	.it-idv-price
 		&-select
-			margin-left: 130px
 		&__line-2
 			margin-left: 160px
 		&-down
@@ -25,7 +24,7 @@
 			&__t
 				font-size: 19px
 		.it-idv-slider
-			margin-left: 130px
+			margin: 0 auto
 			&-radio
 				label
 					font-size: 13px
@@ -215,17 +214,21 @@
 		&__text
 			font-size: 27px
 		&-select
-			margin-left: 130px
+			margin-left: 0
 		&__line, &__line-2
-			width: 679px
-		&__line-2
-			margin-left: 130px
+			width: 900px
+			margin-left: auto
+			margin-right: auto
 		&-list
 			flex-wrap: wrap
 			padding-left: 0
-			margin-left: 25px
 			&__item
 				font-size: 9px
+				margin-left: 0px
+				margin-left: auto
+				margin-right: auto
+				&:first-child
+					margin-left: 32px
 		&-down
 			&__button
 				width: 105px
@@ -236,7 +239,6 @@
 			&__t
 				font-size: 19px
 		.it-idv-slider
-			margin-left: 130px
 			&-radio
 				label
 					font-size: 13px
@@ -392,7 +394,7 @@
 			font-size: 30px
 		&__text
 			font-size: 17px
-			width: 287px
+			width: auto
 	.balloons-can
 		&__headline
 			font-size: 30px
@@ -516,7 +518,70 @@
 			img
 				width: 22px
 				height: 35px
-
+	.service-select
+		&__headline
+			margin-top: 25px
+			font-size: 35px
+		&-s
+			display: block
+			margin: 0 auto
+			text-align: center
+			&__individual--m, &__entity--m
+				display: block
+				color: $l-gray
+				font-family: $jura
+				font-size: 23px
+				font-weight: 400
+				text-transform: uppercase
+				text-decoration: none
+				margin-top: 15px
+			&__individual, &__entity
+				width: 308px
+				height: 205px
+				background-size: cover
+				margin: 0 auto
+				margin-bottom: 25px
+				margin-top: 15px
+			&__headline
+				font-size: 35px
+		&-text
+			&__individual, &__entity
+				display: none
+	.it-idv-bg
+		height: 320px
+	.it-idv-service
+		height: 500px
+		&__headline
+			padding-top: 60px
+			font-size: 30px
+		&__text
+			font-size: 17px
+			width: auto
+	.it-ent-details
+		height: 600px
+		&__headline
+			font-size: 30px
+			img
+				width: 31px
+				height: 30px
+				margin-left: -16px
+		&__text
+			font-size: 18px
+	.it-idv-price
+		&__headline
+			font-size: 30px
+		&__text
+			font-size: 18px
+		&__line, &__line-2
+			width: 580px
+			margin-left: auto
+			margin-right: auto
+		&-select
+			margin-left: 0px
+	.it-idv-slider
+		&-radio
+			label
+				font-size: 12px
 
 
 /////////////// /INDEX //////////////////////

@@ -882,6 +882,10 @@
   width: 417px;
 }
 
+.service-select-s__individual--m, .service-select-s__entity--m {
+  display: none;
+}
+
 .it-idv-bg {
   height: 725px;
   background-image: url(../img/it/individual/ind-bg.png);
@@ -1187,9 +1191,6 @@
 }
 
 @media (min-width: 985px) and (max-width: 1139px) {
-  .it-idv-price-select {
-    margin-left: 130px;
-  }
   .it-idv-price__line-2 {
     margin-left: 160px;
   }
@@ -1204,7 +1205,7 @@
     font-size: 19px;
   }
   .it-idv-price .it-idv-slider {
-    margin-left: 130px;
+    margin: 0 auto;
   }
   .it-idv-price .it-idv-slider-radio label {
     font-size: 13px;
@@ -1447,21 +1448,25 @@
     font-size: 27px;
   }
   .it-idv-price-select {
-    margin-left: 130px;
+    margin-left: 0;
   }
   .it-idv-price__line, .it-idv-price__line-2 {
-    width: 679px;
-  }
-  .it-idv-price__line-2 {
-    margin-left: 130px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .it-idv-price-list {
     flex-wrap: wrap;
     padding-left: 0;
-    margin-left: 25px;
   }
   .it-idv-price-list__item {
     font-size: 9px;
+    margin-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .it-idv-price-list__item:first-child {
+    margin-left: 32px;
   }
   .it-idv-price-down__button {
     width: 105px;
@@ -1472,9 +1477,6 @@
   }
   .it-idv-price-down__t {
     font-size: 19px;
-  }
-  .it-idv-price .it-idv-slider {
-    margin-left: 130px;
   }
   .it-idv-price .it-idv-slider-radio label {
     font-size: 13px;
@@ -1678,7 +1680,7 @@
   }
   .balloons-about__text {
     font-size: 17px;
-    width: 287px;
+    width: auto;
   }
 
   .balloons-can__headline {
@@ -1838,6 +1840,90 @@
   .balloons-contacts__headline img {
     width: 22px;
     height: 35px;
+  }
+
+  .service-select__headline {
+    margin-top: 25px;
+    font-size: 35px;
+  }
+  .service-select-s {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .service-select-s__individual--m, .service-select-s__entity--m {
+    display: block;
+    color: #4c4c4c;
+    font-family: "Jura", sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 15px;
+  }
+  .service-select-s__individual, .service-select-s__entity {
+    width: 308px;
+    height: 205px;
+    background-size: cover;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 15px;
+  }
+  .service-select-s__headline {
+    font-size: 35px;
+  }
+  .service-select-text__individual, .service-select-text__entity {
+    display: none;
+  }
+
+  .it-idv-bg {
+    height: 320px;
+  }
+
+  .it-idv-service {
+    height: 500px;
+  }
+  .it-idv-service__headline {
+    padding-top: 60px;
+    font-size: 30px;
+  }
+  .it-idv-service__text {
+    font-size: 17px;
+    width: auto;
+  }
+
+  .it-ent-details {
+    height: 600px;
+  }
+  .it-ent-details__headline {
+    font-size: 30px;
+  }
+  .it-ent-details__headline img {
+    width: 31px;
+    height: 30px;
+    margin-left: -16px;
+  }
+  .it-ent-details__text {
+    font-size: 18px;
+  }
+
+  .it-idv-price__headline {
+    font-size: 30px;
+  }
+  .it-idv-price__text {
+    font-size: 18px;
+  }
+  .it-idv-price__line, .it-idv-price__line-2 {
+    width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .it-idv-price-select {
+    margin-left: 0px;
+  }
+
+  .it-idv-slider-radio label {
+    font-size: 12px;
   }
 }
 
