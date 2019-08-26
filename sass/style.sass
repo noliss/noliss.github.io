@@ -7,8 +7,9 @@
 @import "service-selection"
 @import "individual"
 @import "entity"
-
 /////////// SLIDER FIX ////////////
+.wow
+	visibility: hidden
 @media (min-width: 985px) and (max-width: 1139px)
 	.it-idv-price
 		&-select
@@ -208,9 +209,10 @@
 	////////// INDIVIDUAL ///////////////
 	.it-idv-service
 		&__text
-			width: 760px
+			width: auto
 			margin: 0 auto
 			margin-top: 50px
+			margin-left: 50px
 	.it-idv-price
 		&__headline
 			font-size: 52px
@@ -257,13 +259,14 @@
 @media screen and (min-width: 769px) and (max-width: 920px)
 	.it-idv-price
 		&__line, &__line-2
-			width: 820px
+			width: 780px
 @media screen and (min-width: 769px) and (max-width: 810px)
 	.it-idv-price	.it-idv-slider
 		margin-left: 40px
 ////////////////////////////////////////////// MOBILE ///////////////////////////////////////////////////////////////////////////
 @media screen and (min-width: 320px) and (max-width: 768px)
 	.header
+		position: relative
 		.container
 			justify-content: space-between
 		&__phone
@@ -273,7 +276,7 @@
 			display: none
 			position: absolute
 			right: 0%
-			top: 12.8%
+			top: 99.5%
 			text-align: center
 			border: 2px solid #e3e3e3
 			background-color: #ffffff
@@ -297,10 +300,13 @@
 		padding-top: 0px
 		&__it
 			display: none
-			&-mobile
+			&-mobile, &-mobile--blue
 				display: block
 				font-size: 22px
 				margin-top: 25px
+			&-mobile--blue
+				a
+					color: #2330de
 		&__balls
 			margin-top: 25px
 			font-size: 22px
@@ -320,7 +326,7 @@
 	.contacts
 		height: 800px
 		&__headline
-			padding-top: 25px
+			padding-top: 15px
 			font-size: 26px
 			font-weight: 500
 			img
@@ -329,6 +335,7 @@
 				margin-right: -5px
 		&-founders
 			margin: 0px
+			margin-top: 10px
 			display: block
 			&__first, &__second
 				width: 184px
@@ -404,6 +411,7 @@
 		&__text
 			font-size: 17px
 			width: auto
+			margin-left: 20px
 	.balloons-can
 		&__headline
 			font-size: 30px
@@ -522,8 +530,11 @@
 				font-size: 34px
 	.balloons-contacts
 		&__headline
+			white-space: nowrap
 			font-size: 30px
 			padding-top: 0px
+			padding-bottom: 15px
+			padding-top: 5px
 			img
 				width: 22px
 				height: 35px
@@ -558,14 +569,15 @@
 				display: none
 	.it-idv-bg
 		height: 320px
-	.it-idv-service
-		height: 500px
 		&__headline
 			padding-top: 60px
 			font-size: 30px
 		&__text
 			font-size: 17px
 			width: auto
+		&__headline
+			font-size: 32px
+			padding-top: 50px
 	.it-ent-details
 		height: 600px
 		&__headline
@@ -638,11 +650,88 @@
 			.slick-prev
 				&:before
 					display: none
+		&__headline
+			font-size: 30px
+			img
+				width: 41px
+				height: 35px
+				margin-left: -25px
+	.it-idv-slider
+		&__text
+			margin-left: 30px
+		&-profile
+			&__name
+				color: $l-gray
+				font-family: $jura
+				font-size: 19px
+				font-weight: 500
+				margin-left: 0px
+			&__photo
+				margin: 0 auto
+				width: 64px
+				height: 65px
+				img
+					width: 64px
+					height: 65px
+	.it-idv-slider-comment
+		.slick-prev
+			left: -2px
+			top: 65%
+		.slick-next
+			right: 25px
+			top: 65%
+	.it-idv-comment
+		&__headline
+			font-size: 30px
+			img
+				width: 41px
+				height: 35px
+				margin-left: -35px
+	.it-idv-other
+		padding-top: 110px
+	.it-idv-contacts
+		.contacts-founders
+			margin-top: 30px
+///////////////////////////////////// /MOBILE ////////////////////////////////////
+@media screen and (min-width: 320px) and (max-width: 585px)
+	.it-idv-comment
+		background-image: url(../img/it/it-idv-bg-m.png)
+@media screen and (min-width: 320px) and (max-width: 685px)
+	.it-idv-service
+		height: 650px
+		background-image: url(../img/it/individual/mobile/it-bg-m_1.png)
+		&__headline
+			font-size: 30px
+			padding-top: 50px
+@media screen and (min-width: 769px) and (max-width: 950px)
+	.service-select
+		&-s
+			&__individual, &__entity
+				width: 378px
+				height: 260px
+				background-size: contain
+			&__individual
+				margin-left: 25px
 @media screen and (min-width: 321px) and (max-width: 768px)
 	.it-idv-price
 		&-list
 			&__item
 				width: 35%
+@media screen and (min-width: 500px) and (max-width: 768px)
+	.balloons-gallery
+		&-photo, &-photo-d
+			display: flex
+			flex-wrap: wrap
+			&__item
+				margin-right: 15px
+				margin-left: 15px
+				&:first-child
+					margin-left: 15px
+					margin-right: 0px
+				&:last-child, &:nth-child(3)
+					display: flex
+				&:nth-child(3)
+					margin-right: 0px
 @media screen and (min-width: 345px) and (max-width: 768px)
 	.it-idv-slider
 		margin-left: 20px
@@ -700,3 +789,33 @@
 		display: none
 	.tw-slider-m
 		display: block
+		.twentytwenty-handle
+			top: 83%
+			width: 55px
+			height: 55px
+			margin-left: -30px
+		.twentytwenty-horizontal .twentytwenty-handle::before
+			bottom: 60%
+		.twentytwenty-horizontal .twentytwenty-handle::after
+			top: 60%
+		.twentytwenty-left-arrow, .twentytwenty-right-arrow
+			width: 12px
+			height: 12px
+			top: 38%
+			right: 18px
+		.twentytwenty-left-arrow
+			left: 18px
+//////////////////////////////////////////////////
+
+@media screen and (min-width: 769px) and (max-width: 830px)
+	.it-idv-price
+		&__line, &__line-2
+			width: 730px
+@media screen and (min-width: 900px) and (max-width: 1040px)
+	.it-idv-service
+		&__text
+			margin-left: 115px
+@media screen and (min-width: 1040px) and (max-width: 1140px)
+		.it-idv-service
+			&__text
+				margin-left: 165px

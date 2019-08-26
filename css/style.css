@@ -16,6 +16,9 @@
   padding-left: 10px;
 }
 
+.header-menu {
+  z-index: 555;
+}
 .header-menu__list {
   list-style: none;
   display: flex;
@@ -189,6 +192,9 @@
   margin-right: 93px;
 }
 .main-screen__it-mobile {
+  display: none;
+}
+.main-screen__it-mobile--blue {
   display: none;
 }
 .main-screen__logo {
@@ -1615,7 +1621,7 @@
     height: 800px;
   }
   .contacts__headline {
-    padding-top: 25px;
+    padding-top: 15px;
     font-size: 26px;
     font-weight: 500;
   }
@@ -1626,6 +1632,7 @@
   }
   .contacts-founders {
     margin: 0px;
+    margin-top: 10px;
     display: block;
   }
   .contacts-founders__first, .contacts-founders__second {
@@ -1932,11 +1939,7 @@
     font-size: 17px;
     width: auto;
   }
-
-  .it-idv-service {
-    background-image: url(../img/it/individual/mobile/it-bg-m_1.png);
-  }
-  .it-idv-service__headline {
+  .it-idv-bg__headline {
     font-size: 32px;
     padding-top: 50px;
   }
@@ -2092,6 +2095,16 @@
     background-image: url(../img/it/it-idv-bg-m.png);
   }
 }
+@media screen and (min-width: 320px) and (max-width: 685px) {
+  .it-idv-service {
+    height: 650px;
+    background-image: url(../img/it/individual/mobile/it-bg-m_1.png);
+  }
+  .it-idv-service__headline {
+    font-size: 30px;
+    padding-top: 50px;
+  }
+}
 @media screen and (min-width: 769px) and (max-width: 950px) {
   .service-select-s__individual, .service-select-s__entity {
     width: 378px;
@@ -2110,6 +2123,7 @@
 @media screen and (min-width: 500px) and (max-width: 768px) {
   .balloons-gallery-photo, .balloons-gallery-photo-d {
     display: flex;
+    flex-wrap: wrap;
   }
   .balloons-gallery-photo__item, .balloons-gallery-photo-d__item {
     margin-right: 15px;
@@ -2117,6 +2131,12 @@
   }
   .balloons-gallery-photo__item:first-child, .balloons-gallery-photo-d__item:first-child {
     margin-left: 15px;
+    margin-right: 0px;
+  }
+  .balloons-gallery-photo__item:last-child, .balloons-gallery-photo__item:nth-child(3), .balloons-gallery-photo-d__item:last-child, .balloons-gallery-photo-d__item:nth-child(3) {
+    display: flex;
+  }
+  .balloons-gallery-photo__item:nth-child(3), .balloons-gallery-photo-d__item:nth-child(3) {
     margin-right: 0px;
   }
 }
