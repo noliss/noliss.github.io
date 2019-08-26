@@ -144,8 +144,6 @@
 		&__bg
 			height: 380px
 			width: 320px
-			&:last-child
-				margin-top: -75px
 		&__img
 			img
 				margin-top: 20px
@@ -175,7 +173,7 @@
 		margin: 0 auto
 		margin-top: 80px
 		&__text
-			margin-left: 0px
+			margin-left: 85px
 	.slick-prev
 		left: 15px
 	.balloons-other
@@ -197,7 +195,9 @@
 		&__headline
 			font-size: 52px
 		&__text
-			font-size: 22px
+			font-size: 26px
+			text-align: center
+			margin-left: 0px
 	.it-ent-details
 		&__headline
 			font-size: 52px
@@ -212,7 +212,6 @@
 			width: auto
 			margin: 0 auto
 			margin-top: 50px
-			margin-left: 50px
 	.it-idv-price
 		&__headline
 			font-size: 52px
@@ -256,6 +255,11 @@
 	.it-idv-comment
 		&__headline
 			font-size: 52px
+@media screen and (min-width: 769px) and (max-width: 1039px)
+	.balloons-can
+		&__bg
+			&:last-child
+				margin-top: -75px
 @media screen and (min-width: 769px) and (max-width: 920px)
 	.it-idv-price
 		&__line, &__line-2
@@ -311,6 +315,7 @@
 			margin-top: 25px
 			font-size: 22px
 			text-align: center
+			margin-right: 0px
 		&__logo
 			margin-top: 0
 			padding-top: 45px
@@ -409,9 +414,9 @@
 		&__headline
 			font-size: 30px
 		&__text
-			font-size: 17px
+			font-size: 22px
 			width: auto
-			margin-left: 20px
+			margin-left: 85px
 	.balloons-can
 		&__headline
 			font-size: 30px
@@ -448,6 +453,9 @@
 				img
 					width: 130px
 					height: 139px
+	.balloons-can
+		&__balloon-m, &__balloon-m-2, &__balloon-m-3
+			display: block
 	.balloons-gallery
 		&__headline
 			padding-top: 0
@@ -464,7 +472,7 @@
 			&__item
 				margin-left: auto
 				margin-right: auto
-				width: 223px
+				width: 230px
 				height: 154px
 				margin-top: 13px
 				&:first-child
@@ -474,7 +482,7 @@
 					display: none
 				a
 					img
-						width: 223px
+						width: 230px
 						height: 154px
 		&__button
 			margin-top: 17px
@@ -693,10 +701,16 @@
 		.contacts-founders
 			margin-top: 30px
 ///////////////////////////////////// /MOBILE ////////////////////////////////////
+@media screen and (min-width: 320px) and (max-width: 470px)
+	.balloons
+		&-about
+			&__text
+				margin-left: 30px
+				font-size: 19px
 @media screen and (min-width: 320px) and (max-width: 585px)
 	.it-idv-comment
 		background-image: url(../img/it/it-idv-bg-m.png)
-@media screen and (min-width: 320px) and (max-width: 685px)
+@media screen and (min-width: 320px) and (max-width: 658px)
 	.it-idv-service
 		height: 650px
 		background-image: url(../img/it/individual/mobile/it-bg-m_1.png)
@@ -717,7 +731,7 @@
 		&-list
 			&__item
 				width: 35%
-@media screen and (min-width: 500px) and (max-width: 768px)
+@media screen and (min-width: 525px) and (max-width: 768px)
 	.balloons-gallery
 		&-photo, &-photo-d
 			display: flex
@@ -811,11 +825,3 @@
 	.it-idv-price
 		&__line, &__line-2
 			width: 730px
-@media screen and (min-width: 900px) and (max-width: 1040px)
-	.it-idv-service
-		&__text
-			margin-left: 115px
-@media screen and (min-width: 1040px) and (max-width: 1140px)
-		.it-idv-service
-			&__text
-				margin-left: 165px

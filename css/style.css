@@ -533,6 +533,7 @@
 }
 
 .balloons-can {
+  position: relative;
   height: 760px;
   background-image: url(../img/balloons/bg/balloons-bg-2.png);
   background-repeat: no-repeat;
@@ -585,6 +586,31 @@
   position: absolute;
   left: 27%;
   top: 50%;
+}
+.balloons-can__balloon-m, .balloons-can__balloon-m-2, .balloons-can__balloon-m-3 {
+  background-image: url(../img/balloons/balloon/mb-tabl-bln.png);
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: rotate(-5deg);
+  display: none;
+  width: 140px;
+  position: absolute;
+  left: 43%;
+  bottom: 6%;
+}
+.balloons-can__balloon-m-2 {
+  margin-left: 50px;
+  margin-bottom: -75px;
+  width: 100px;
+  height: 190px;
+}
+.balloons-can__balloon-m-3 {
+  margin-left: -40px;
+  margin-bottom: -35px;
+  width: 120px;
+  height: 210px;
 }
 .balloons-can .slick-slider {
   display: none;
@@ -1381,9 +1407,6 @@
     height: 380px;
     width: 320px;
   }
-  .balloons-can__bg:last-child {
-    margin-top: -75px;
-  }
   .balloons-can__img img {
     margin-top: 20px;
     width: 138px;
@@ -1421,7 +1444,7 @@
     margin-top: 80px;
   }
   .balloons-slider__text {
-    margin-left: 0px;
+    margin-left: 85px;
   }
 
   .slick-prev {
@@ -1451,7 +1474,9 @@
     font-size: 52px;
   }
   .it-idv-service__text {
-    font-size: 22px;
+    font-size: 26px;
+    text-align: center;
+    margin-left: 0px;
   }
 
   .it-ent-details__headline {
@@ -1469,7 +1494,6 @@
     width: auto;
     margin: 0 auto;
     margin-top: 50px;
-    margin-left: 50px;
   }
 
   .it-idv-price__headline {
@@ -1524,6 +1548,11 @@
 
   .it-idv-comment__headline {
     font-size: 52px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1039px) {
+  .balloons-can__bg:last-child {
+    margin-top: -75px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 920px) {
@@ -1598,6 +1627,7 @@
     margin-top: 25px;
     font-size: 22px;
     text-align: center;
+    margin-right: 0px;
   }
   .main-screen__logo {
     margin-top: 0;
@@ -1727,9 +1757,9 @@
     font-size: 30px;
   }
   .balloons-about__text {
-    font-size: 17px;
+    font-size: 22px;
     width: auto;
-    margin-left: 20px;
+    margin-left: 85px;
   }
 
   .balloons-can__headline {
@@ -1780,6 +1810,10 @@
     height: 139px;
   }
 
+  .balloons-can__balloon-m, .balloons-can__balloon-m-2, .balloons-can__balloon-m-3 {
+    display: block;
+  }
+
   .balloons-gallery__headline {
     padding-top: 0;
     font-size: 30px;
@@ -1799,7 +1833,7 @@
   .balloons-gallery-photo__item, .balloons-gallery-photo-d__item {
     margin-left: auto;
     margin-right: auto;
-    width: 223px;
+    width: 230px;
     height: 154px;
     margin-top: 13px;
   }
@@ -1811,7 +1845,7 @@
     display: none;
   }
   .balloons-gallery-photo__item a img, .balloons-gallery-photo-d__item a img {
-    width: 223px;
+    width: 230px;
     height: 154px;
   }
   .balloons-gallery__button {
@@ -2090,12 +2124,18 @@
     margin-top: 30px;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 470px) {
+  .balloons-about__text {
+    margin-left: 30px;
+    font-size: 19px;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 585px) {
   .it-idv-comment {
     background-image: url(../img/it/it-idv-bg-m.png);
   }
 }
-@media screen and (min-width: 320px) and (max-width: 685px) {
+@media screen and (min-width: 320px) and (max-width: 658px) {
   .it-idv-service {
     height: 650px;
     background-image: url(../img/it/individual/mobile/it-bg-m_1.png);
@@ -2120,7 +2160,7 @@
     width: 35%;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 768px) {
+@media screen and (min-width: 525px) and (max-width: 768px) {
   .balloons-gallery-photo, .balloons-gallery-photo-d {
     display: flex;
     flex-wrap: wrap;
@@ -2239,16 +2279,6 @@
 @media screen and (min-width: 769px) and (max-width: 830px) {
   .it-idv-price__line, .it-idv-price__line-2 {
     width: 730px;
-  }
-}
-@media screen and (min-width: 900px) and (max-width: 1040px) {
-  .it-idv-service__text {
-    margin-left: 115px;
-  }
-}
-@media screen and (min-width: 1040px) and (max-width: 1140px) {
-  .it-idv-service__text {
-    margin-left: 165px;
   }
 }
 

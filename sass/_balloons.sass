@@ -38,6 +38,7 @@
 		margin-top: 67px
 
 .balloons-can
+	position: relative
 	height: 760px
 	background-image: url(../img/balloons/bg/balloons-bg-2.png)
 	background-repeat: no-repeat
@@ -80,6 +81,29 @@
 		position: absolute
 		left: 27%
 		top: 50%
+	&__balloon-m, &__balloon-m-2, &__balloon-m-3
+		background-image: url(../img/balloons/balloon/mb-tabl-bln.png)
+		height: 230px
+		background-repeat: 	no-repeat
+		background-size: contain
+		background-position: center
+		transform: rotate(-5deg)
+		display: none
+		width: 140px
+		position: absolute
+		left: 43%
+		bottom: 6%	
+	&__balloon-m
+	&__balloon-m-2
+		margin-left: 50px
+		margin-bottom: -75px
+		width: 100px
+		height: 190px
+	&__balloon-m-3
+		margin-left: -40px
+		margin-bottom: -35px
+		width: 120px
+		height: 210px
 	.slick-slider
 		display: none
 
