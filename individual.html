@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/smile-bar.css">
 	<link  href="css/jquery.simple-dtpicker.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/animate.min.css" type="text/css" media="screen" />
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700&display=swap" rel="stylesheet">
 </head>
@@ -68,27 +69,27 @@
 		<div class="it-idv-bg">
 			<div class="container">
 				<div class="main-screen">
-					<div class="main-screen__it it-idv__it"><a href="service-selection.html">IT-обслуживание</a></div>
-					<div class="main-screen__logo">
+					<div class="main-screen__it it-idv__it wow fadeIn" data-wow-delay="1s"><a href="service-selection.html">IT-обслуживание</a></div>
+					<div class="main-screen__logo wow fadeIn" data-wow-delay="0.5s">
 						<img src="img/main/main-logo.png" alt="Логотип" style="margin-top: -10px;">
 					</div>
-					<div class="main-screen__underlogo">
+					<div class="main-screen__underlogo wow fadeIn" data-wow-delay="0.5s">
 						<span class="main-screen__underlogo--red">Адекватные</span> 
 						цены - 
 						<span class="main-screen__underlogo--blue">профессиональный</span>
 						подход
 					</div>
-					<div class="main-screen__it-mobile--blue"><a href="service-selection.html">IT-обслуживание</a></div>
-					<div class="main-screen__balls"><a href="balloons.html">Оформление воздушными шарами</a></div>
+					<div class="main-screen__it-mobile--blue wow fadeIn" data-wow-delay="1s"><a href="">IT-обслуживание</a></div>
+					<div class="main-screen__balls wow fadeIn" data-wow-delay="1s"><a href="balloons.html">Оформление воздушными шарами</a></div>
 				</div>
 			</div>
 		</div>
 		<div class="it-idv-service">
 			<div class="container">
-				<div class="it-idv-service__headline">
+				<div class="it-idv-service__headline wow zoomIn">
 					<span class="it-idv-service__headline--blue">IT</span>-обслуживание
 				</div>
-				<div class="it-idv-service__text">
+				<div class="it-idv-service__text wow fadeIn" data-wow-delay="0.2s">
 					Наша деятельность делится на подход к физическим и к юридическим<br> лицам.<br>
 					- Для физических лиц мы осуществляем такие услуги как: чистка<br> системного блока/корпуса ноутбука от пыли, удаление вирусов, <br>установка ОС Windows, Linux, прикладных программ и т. д.
 
@@ -97,11 +98,11 @@
 		</div>
 		<div class="it-idv-price">
 			<div class="container">
-				<div class="it-idv-price__headline">
+				<div class="it-idv-price__headline wow zoomIn">
 					Ознакомьтесь с нашим<br>
 					<p class="it-idv-price__headline--blue">прайс-листом</p>
 				</div>
-				<div class="it-idv-price__text">
+				<div class="it-idv-price__text wow flipInX">
 					И рассчитайте цену за все выбранные услуги
 				</div>
 				<div class="it-idv-price-select">
@@ -494,14 +495,14 @@
 		<!-- /it-idv-price -->
 				<div class="it-idv-comment">
 					<div class="container">
-						<div class="it-idv-comment__headline">
+						<div class="it-idv-comment__headline wow zoomIn">
 							<img id="msg" src="img/balloons/slider/i-msg-off.png" alt="изображение" onmouseover="ChangeImage('msg','img/balloons/slider/i-msg-on.png')" onmouseout="ChangeImage('msg','img/balloons/slider/i-msg-off.png')">
 							Оставьте отзыв
 							<p class="it-idv-comment__headline--black">в наших соц сетях</p>
 						</div>
-				<div class="balloons-comment__text">Нам будет очень приятно :)</div>
+				<div class="balloons-comment__text wow flipInX">Нам будет очень приятно :)</div>
 				<!-- SLICK SLIDER -->
-				<div class="it-idv-slider-comment">
+				<div class="it-idv-slider-comment wow bounceInUp">
 					<!-- ITEM-1 -->
 						<div class="balloons-slider-item">
 							<div class="balloons-slider-profile">
@@ -551,7 +552,7 @@
 					<!-- /SLICK SLIDER -->
 					<div class="it-idv-other">
 								<div class="container">
-									<div class="balloons-other__headline">
+									<div class="balloons-other__headline wow zoomIn">
 										<img id="smile" src="img/balloons/other/smile-off.png" alt="smile" onmouseover="ChangeImage('smile','img/balloons/other/smile-on.png')" onmouseout="ChangeImage('smile','img/balloons/other/smile-off.png')">
 										Или оставьте его
 										<p class="balloons-other__headline--blue">в такой форме</p>
@@ -560,14 +561,14 @@
 										  <input type="range" id="mood" value="66"/>
 										  <output for="mood"></output>
 										</form>
-									<div class="balloons-other__button">*клац*</div>
+									<div class="balloons-other__button wow zoomIn">*клац*</div>
 								</div>
 					</div>
 				</div>
 		</div>
 		<div class="it-idv-contacts">
 				<div class="container">
-					<div class="contacts__headline">
+					<div class="contacts__headline wow bounce">
 						<img src="img/main/founders/h-phone.png" alt="phone">
 						<span class="contacts__headline--blue">Свяжитесь</span> с нами
 					</div>
@@ -616,7 +617,7 @@
 						</div>
 					</div>
 					</div>
-		</div>
+		</div> 
 		<div class="request it-idv-request-form">
 			<div class="container">
 				<div class="request__headline">
@@ -632,24 +633,24 @@
 				<form>
 					<div class="request-form">
 						<div class="request-form-c1">
-							<div class="request-form__bg">
+							<div class="request-form__bg wow fadeInLeft" data-wow-delay="0.2s">
 								<input class="request-form__text" type="text" placeholder="ФИО" required>
 							</div>
 							<br>
-							<div class="request-form__bg">
+							<div class="request-form__bg wow fadeInLeft" data-wow-delay="0.4s">
 								<input class="request-form__text" type="text" placeholder="ТЕЛЕФОН" required>
 							</div>
-							<div class="request-form__bg">
+							<div class="request-form__bg wow fadeInLeft" data-wow-delay="0.6s">
 								<input class="request-form__text request-form__date" type="text" placeholder="ДАТА ПРИБЫТИЯ МАСТЕРА" required>
 							</div>
 						</div>
-						<div class="request-form-c2">
+						<div class="request-form-c2 wow fadeInRight">
 							<div class="request-form__order">
 								<textarea class="request-form__text" placeholder="ВАШ ЗАКАЗ" type="text" required></textarea>
 							</div>
 						</div>
 					</div>
-					<button class="request-form__button">Отправить</button>
+					<button class="request-form__button wow fadeIn" data-wow-delay="0.6s">Отправить</button>
 				</form>
 			</div>
 		</div>
@@ -671,6 +672,8 @@
 	<script src="js/smile-bar.js" type="text/javascript"></script>
 	<script src="js/jquery.simple-dtpicker.js" type="text/javascript"></script>
 	<script src="js/scripts.js" type="text/javascript"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+	<script>new WOW().init();</script>
 	<script type="text/javascript">
 		// Slick Slider
 		$('.it-idv-slider').slick({

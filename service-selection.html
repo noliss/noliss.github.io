@@ -11,6 +11,7 @@
 	<!--/Redhelper -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.min.css" type="text/css" media="screen" />
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700&display=swap" rel="stylesheet">
 </head>
@@ -63,18 +64,18 @@
 	<main class="main">
 		<div class="service-select">
 			<div class="container">
-				<div class="service-select__headline">
+				<div class="service-select__headline wow zoomIn">
 					<span class="service-select__headline--blue">Для кого</span><br>
 					нам предоставить<br>
 					свои услуги?
 				</div>
-				<div class="service-select-s">
+				<div class="service-select-s wow zoomIn">
 					<a href="individual.html"><div class="service-select-s__individual" onmouseover="TextOn('ind');" onmouseout="TextOff('ind');"></div></a>
 					<a href="individual.html" id="ind" class="service-select-s__individual--m">Физическое лицо</a>
 					<a href="entity.html"><div class="service-select-s__entity" onmouseover="TextOn('ent');" onmouseout="TextOff('ent');"></div></a>
 					<a href="entity.html" id="ent" class="service-select-s__entity--m">Юридическое лицо</a>
 				</div>
-				<div class="service-select-text">
+				<div class="service-select-text wow zoomIn">
 					<a href="individual.html" id="ind" class="service-select-text__individual">Физическое лицо</a>
 					<a href="entity.html" id="ent" class="service-select-text__entity">Юридическое лицо</a>
 				</div>
@@ -94,6 +95,8 @@
 	</footer>
 	<script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
 	<script src="js/scripts.js" type="text/javascript"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+	<script>new WOW().init();</script>
 	<script type="text/javascript">
 		function TextOn(k){
 		var el = document.getElementById(k);
