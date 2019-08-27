@@ -1311,7 +1311,6 @@
   }
 
   .contacts__headline {
-    padding-top: 75px;
     font-size: 52px;
   }
   .contacts__headline img {
@@ -1652,7 +1651,6 @@
     height: 800px;
   }
   .contacts__headline {
-    padding-top: 75px;
     font-size: 26px;
     font-weight: 500;
   }
@@ -1660,6 +1658,9 @@
     width: 22px;
     height: 35px;
     margin-right: -5px;
+  }
+  .contacts__fix {
+    padding-top: 90px;
   }
   .contacts-founders {
     margin: 0px;
@@ -1884,7 +1885,7 @@
   .balloons-slider-profile__photo {
     margin-left: auto;
     margin-right: auto;
-    border: 10px solid #b1c3f3;
+    border: 10px solid #81c9ea;
   }
   .balloons-slider-profile__name {
     margin-left: 0;
@@ -1911,7 +1912,7 @@
   .balloons-other__headline img {
     width: 45px;
     height: 45px;
-    margin-left: -15px;
+    margin-left: -10px;
   }
   .balloons-other__bar input, .balloons-other__bar output {
     font-size: 34px;
@@ -2118,7 +2119,7 @@
   }
 
   .it-idv-other {
-    padding-top: 110px;
+    padding-top: 70px;
   }
 
   .it-idv-contacts .contacts-founders {
