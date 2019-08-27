@@ -1237,10 +1237,6 @@
   color: #2330de;
 }
 
-.wow {
-  visibility: hidden;
-}
-
 @media (min-width: 985px) and (max-width: 1139px) {
   .it-idv-price__line-2 {
     margin-left: 160px;
@@ -2322,6 +2318,9 @@
   .it-idv-price__line, .it-idv-price__line-2 {
     width: 730px;
   }
+}
+.wow {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
