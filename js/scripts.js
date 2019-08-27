@@ -32,9 +32,11 @@ function ChangeImage(id,image){
 }
 
 // Слайдер index.html
+$(document).ready(function(){
 $(function(){
 $("#tw-container").twentytwenty();
 	});
 $(function(){
 $("#tw-container-m").twentytwenty();
 	});
+});
