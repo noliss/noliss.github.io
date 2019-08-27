@@ -209,10 +209,10 @@
 
 @media screen and (min-width: 320px) and (max-width: 768px){
 .twentytwenty-handle{
-  height: 25px;
-  width: 25px;
+  height: 35px;
+  width: 35px;
   left: 195px;
-  margin-left: -15px;
+  margin-left: -20px;
   border: 2px solid white;
   }
 .twentytwenty-horizontal .twentytwenty-handle::before{
@@ -222,14 +222,17 @@
   top: 25%;
   }
 .twentytwenty-left-arrow, .twentytwenty-right-arrow{
-  width: 0.15px;
-  height: 0px;
+  width: 5px;
+  height: 5px;
   margin-top: -5px;
 }
 .twentytwenty-left-arrow{
-  margin-left: -8px;
+  margin-left: -10.5px;
 }
 .twentytwenty-right-arrow{
-  margin-right: -9px;
+  margin-right: -12px;
+}
+.twentytwenty-left-arrow, .twentytwenty-right-arrow{
+  top: 43%;
 }
 }

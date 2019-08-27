@@ -107,7 +107,7 @@
 		<div class="balloons-can">
 			<div class="container">
 				<div class="balloons-can__headline wow zoomIn">
-					<img id="lamp" src="img/balloons/we_can/lamp-off.png" alt="изображение" onmouseover="ChangeImage('lamp','img/balloons/we_can/lamp-on.png')" onmouseout="ChangeImage('lamp','img/balloons/we_can/lamp-off.png')">
+					<img id="lamp" src="img/balloons/we_can/lamp-off.png" alt="изображение" onmouseover="ChangeImage('lamp','../img/balloons/we_can/lamp-on.png')" onmouseout="ChangeImage('lamp','../img/balloons/we_can/lamp-off.png')">
 					Наши <span class="balloons-can__headline--red">возможности</span>
 				</div>
 				<div class="balloons-can__slider-m wow zoomInUp">
@@ -399,10 +399,6 @@
 	<script>new WOW().init();</script>
 	<script type="text/javascript">
 		// АНИМАЦИИ
-		function ChangeImage(id,image){
-		var el=document.getElementById(id);
-		el.src=image;
-	}
 		// Photo-zoom
 		jQuery('.lightzoom').lightzoom({speed: 400, viewTitle: true, isWindowClickClosing: true});
 		// Slick Slider

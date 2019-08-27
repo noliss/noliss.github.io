@@ -194,10 +194,9 @@
 	.it-idv-service
 		&__headline
 			font-size: 52px
-		&__text
-			font-size: 26px
-			text-align: center
-			margin-left: 0px
+		&__text, &__text-1
+			font-size: 22px
+			text-align: left
 	.it-ent-details
 		&__headline
 			font-size: 52px
@@ -208,10 +207,12 @@
 			font-size: 27px
 	////////// INDIVIDUAL ///////////////
 	.it-idv-service
-		&__text
+		&__text, &__text-1
 			width: auto
 			margin: 0 auto
 			margin-top: 50px
+		&__text-1
+			margin-left: 90px
 	.it-idv-price
 		&__headline
 			font-size: 52px
@@ -331,7 +332,7 @@
 	.contacts
 		height: 800px
 		&__headline
-			padding-top: 15px
+			padding-top: 75px
 			font-size: 26px
 			font-weight: 500
 			img
@@ -519,7 +520,7 @@
 			margin-left: auto
 			margin-right: auto
 			margin-top: 15px
-			width: 230px
+			width: 500px
 			text-align: center
 		.slick-prev
 			left: 15px
@@ -595,7 +596,7 @@
 				height: 30px
 				margin-left: -16px
 		&__text
-			font-size: 18px
+			font-size: 21px
 	.it-idv-price
 		&__headline
 			font-size: 30px
@@ -701,12 +702,24 @@
 		.contacts-founders
 			margin-top: 30px
 ///////////////////////////////////// /MOBILE ////////////////////////////////////
+@media screen and (min-width: 320px) and (max-width: 420px)
+	.it-ent-details
+		&__text
+			font-size: 18px
 @media screen and (min-width: 320px) and (max-width: 470px)
 	.balloons
 		&-about
 			&__text
 				margin-left: 30px
 				font-size: 19px
+@media screen and (min-width: 320px) and (max-width: 550px)
+	.balloons-slider
+		&__text
+			width: 310px
+@media screen and (min-width: 320px) and (max-width: 384px)
+	.balloons-slider
+		&__text
+			width: 280px
 @media screen and (min-width: 320px) and (max-width: 585px)
 	.it-idv-comment
 		background-image: url(../img/it/it-idv-bg-m.png)
@@ -717,6 +730,18 @@
 		&__headline
 			font-size: 30px
 			padding-top: 50px
+@media screen and (min-width: 380px) and (max-width: 768px)
+	.it-idv-service
+		height: 650px
+	.it-idv-comment
+		height: 1070px
+		background-position: top center
+@media screen and (min-width: 400px) and (max-width: 768px)
+	.it-idv-price
+		height: 600px
+@media screen and (min-width: 400px) and (max-width: 768px)
+	.it-idv-comment
+		height: 980px
 @media screen and (min-width: 769px) and (max-width: 950px)
 	.service-select
 		&-s
@@ -726,6 +751,10 @@
 				background-size: contain
 			&__individual
 				margin-left: 25px
+@media screen and (min-width: 320px) and (max-width: 745px)
+	.it-idv-service
+		&__text-1
+				margin-left: 30px
 @media screen and (min-width: 321px) and (max-width: 768px)
 	.it-idv-price
 		&-list

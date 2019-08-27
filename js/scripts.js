@@ -1,13 +1,15 @@
 //////// MOBILE MENU ////////////////////
-var menuButton = $('.header__mobile');
+var menuButton = $('.header__mobile img');
 var menu = $('.header-menu');
 $(document).ready(function(){
 menuButton.on('click', function(event){
 	if (menu[0].style.display == 'flex')
 		{
 			menu[0].style.display = 'none';
+			$(menuButton).attr('src', '../img/mobile/m-menu-off.png').hide().fadeIn("fast");
 		}
 	else{
+			$(menuButton).attr('src', '../img/mobile/m-menu-on.png').hide().fadeIn("fast");
 			menu[0].style.display = 'flex';
 		}
 	});
@@ -23,3 +25,8 @@ $(function(){
     futureOnly: true
 	});
 });
+
+function ChangeImage(id,image){
+		var el = document.getElementById(id);
+		el.src=image;
+}
