@@ -190,12 +190,17 @@
 .main-screen__it {
   text-align: right;
   margin-right: 93px;
+  outline: none;
 }
 .main-screen__it-mobile {
   display: none;
 }
 .main-screen__it-mobile--blue {
   display: none;
+}
+.main-screen__it:hover {
+  transform: scale(1.05, 1.05);
+  transition: 0.3s;
 }
 .main-screen__logo {
   margin-top: 70px;
@@ -218,6 +223,10 @@
   margin-top: 60px;
   text-align: left;
   margin-right: 20px;
+}
+.main-screen__balls:hover {
+  transform: scale(1.05, 1.05);
+  transition: 0.3s;
 }
 
 .tw-slider-m {
