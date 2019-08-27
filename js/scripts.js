@@ -30,3 +30,11 @@ function ChangeImage(id,image){
 		var el = document.getElementById(id);
 		el.src=image;
 }
+
+// Слайдер index.html
+$(function(){
+$("#tw-container").twentytwenty();
+	});
+$(function(){
+$("#tw-container-m").twentytwenty();
+	});
