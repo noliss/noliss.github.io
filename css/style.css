@@ -956,12 +956,14 @@
   color: #81c9ea;
 }
 .it-idv-service__text, .it-idv-service__text-1 {
-  margin-left: 78px;
   margin-top: 85px;
   color: #4d4d4d;
   font-family: "Jura", sans-serif;
   font-size: 30px;
   font-weight: 400;
+}
+.it-idv-service__text-1 {
+  margin-left: 78px;
 }
 
 .it-idv-price {
