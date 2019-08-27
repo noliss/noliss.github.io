@@ -1,4 +1,2 @@
 # noliss.github.io
-<p><h2> _____________________________ </h2>
-<h1> Color Ball </h1>
-<h2> _____________________________</h2></p>
+<img src="https://noliss.github.io/img/main/main-logo.png">
