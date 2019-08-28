@@ -39,4 +39,7 @@ $("#tw-container").twentytwenty();
 $(function(){
 $("#tw-container-m").twentytwenty();
 	});
+$(function(){
+$("#tw-container-l").twentytwenty();
+	});
 });

@@ -225,6 +225,10 @@
   display: none;
 }
 
+.tw-slider-l {
+  display: none;
+}
+
 .contacts {
   height: 750px;
   padding-top: 15px;
@@ -855,7 +859,7 @@
 }
 
 .service-select {
-  height: 780px;
+  min-height: calc(100vh - 168px);
 }
 .service-select__headline {
   color: #4c4c4c;
@@ -2329,6 +2333,22 @@
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
   .balloons-about, .balloons-can, .balloons-gallery, .balloons-comment, .balloons-other, .balloons-contacts {
     background-size: contain;
+  }
+
+  .tw-slider-l {
+    display: block;
+  }
+
+  .tw-slider {
+    display: none;
+  }
+
+  .main-bg, .balloons-bg, .it-idv-bg {
+    height: 970px;
+  }
+
+  .it-idv-service {
+    height: 975px;
   }
 }
 .wow {
