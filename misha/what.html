@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/slick.css">
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<nav class="navbar">
+				<ul class="navbar-menu">
+					<li class="navbar-menu__item">
+						<a class="navbar-menu__link" href="who.html">Кто мы?</a>
+					</li>
+					<li class="navbar-menu__item">
+						<a class="navbar-menu__link" href="who.html">Что мы?</a>
+					</li>
+					<li class="navbar-menu__item">
+						<a class="navbar-menu__link" href="where.html">Где мы?</a>
+					</li>
+					<li class="navbar-menu__item">
+						<a class="navbar-menu__link" href="#">Кто вы?</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="main">
+			<div class="main-content">
+				<ul class="main-content__services">
+					<li class="main-content__item">Крышные установки</li>
+					<li class="main-content__item">Стэллы</li>
+					<li class="main-content__item">Объемные буквы</li>
+					<li class="main-content__item">Выставочные стенды</li>
+					<li class="main-content__item">Козырьки</li>
+					<li class="main-content__item">Световые короба</li>
+					<li class="main-content__item">Неон</li>
+					<li class="main-content__item">Панель-кронштейны</li>
+					<li class="main-content__item">Вывески</li>
+					<li class="main-content__item">Рекламные конструкции</li>
+					<li class="main-content__item">Торговые оборудования</li>
+					<li class="main-content__item">Таблички</li>
+				</ul>
+			</div>
+			<div class="main-leftline"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script>
+		$('.slick-slider').slick({
+		  dots: false,
+		  infinite: true,
+		  autoplay: true,
+		  speed: 1000,
+		  autoplaySpeed: 7099,
+		  slidesToShow: 6,
+		  slidesToScroll: 1,
+		  prevArrow: $('.slick-arr'),
+			nextArrow: $('.slick-arr-prev')
+		});
+	</script>
+</body>
+</html>

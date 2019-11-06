@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/slick.css">
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<nav class="navbar">
+				<ul class="navbar-menu">
+					<li class="navbar-menu__item">
+						<a class="navbar-menu__link" href="who.html">Кто мы?</a>
+					</li>
+					<li class="navbar-menu__item">
+						<a class="navbar-menu__link" href="what.html">Что мы?</a>
+					</li>
+					<li class="navbar-menu__item">
+						<a class="navbar-menu__link" href="where.html">Где мы?</a>
+					</li>
+					<li class="navbar-menu__item">
+						<a class="navbar-menu__link" href="#">Кто вы?</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="main">
+			<div class="main-downline"></div>
+			<div class="main-leftline"></div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-left"></div>
+		<div class="footer-slider">
+			<div class="slick-arr"></div>
+			<div class="slick-slider">
+				<div class="slick-slider__item" style="background-image: url(https://a.wattpad.com/cover/84608722-352-k886345.jpg);"></div>
+				<div class="slick-slider__item" style="background-image: url(https://i.pinimg.com/originals/c0/b7/7f/c0b77faeb2cb3e67fd1b423c4535f6c3.jpg)"></div>
+				<div class="slick-slider__item" style="background-image: url(https://www.meme-arsenal.com/memes/03f312a04e6c61405073cd4932cf69ed.jpg);"></div>
+				<div class="slick-slider__item" style="background-image: url(http://zabavnik.club/wp-content/uploads/2018/02/mishki_1_16094216.jpg);"></div>
+				<div class="slick-slider__item" style="background-image: url(http://www.spletnik.ru/img/__post/60/60cf0ac41d8c3404a26fb544a0887c1d_994.jpg);"></div>
+				<div class="slick-slider__item" style="background-image: url(https://pictureholiday.ru/wp-content/uploads/2018/05/e77d3da8e42f0eb.jpg);"></div>
+				<div class="slick-slider__item" style="background-image: url(https://cs8.pikabu.ru/post_img/big/2016/02/04/7/145458292112119207.jpg);"></div>
+				<div class="slick-slider__item" style="background-image: url(https://klike.net/uploads/posts/2019-03/medium/1551512888_2.jpg);"></div>
+			</div>
+			<div class="slick-arr-prev"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script>
+		$('.slick-slider').slick({
+		  dots: false,
+		  infinite: true,
+		  autoplay: true,
+		  speed: 1000,
+		  autoplaySpeed: 7099,
+		  slidesToShow: 6,
+		  slidesToScroll: 1,
+		  prevArrow: $('.slick-arr'),
+			nextArrow: $('.slick-arr-prev')
+		});
+	</script>
+</body>
+</html>
