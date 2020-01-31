@@ -1,0 +1,637 @@
+*
+	padding: 0
+	margin: 0
+.header
+	width: 100%
+	height: 104px
+	background-color: #101214
+.container
+	width: 1125px
+	padding-left: 15px
+	padding-right: 15px
+	margin: 0 auto
+.header-content
+	display: flex
+	justify-content: space-between
+	height: 104px
+	align-items: center
+.header__logo
+	display: flex
+	align-items: center
+	cursor: pointer
+	&--cname
+		color: #ffffff
+		font-family: Gilroy
+		font-size: 22px
+		font-weight: 700
+		span
+			color: #ffbb00
+.header-nav
+	&-menu
+		list-style: none
+		display: flex
+		&__item
+			margin-right: 42px
+			position: relative
+			&:before
+				content: ""
+				height: 4px
+				background-color: #ffbb00
+				position: absolute
+				width: 100%
+				top: -43px
+				opacity: 0
+				transition: opacity 0.2s linear 
+			&:hover:before
+				opacity: 1
+			&:last-child
+				margin-right: 0px
+		&__link
+			text-decoration: none
+			color: #f2f2f2
+			font-family: Gilroy
+			font-size: 16px
+			font-weight: 600
+			white-space: nowrap
+			transition: 0.2s
+			&:hover
+				color: #ffbb00
+.header-auth
+	display: flex
+	align-items: center
+	&__login, &__signup
+		text-align: center
+		padding-top: 12px
+		cursor: pointer
+	&__login
+		width: 100px
+		height: 32px
+		border-radius: 22px
+		border: 2px solid #ffbb00
+		margin-right: 16px
+		color: #ffbb00
+		font-family: Gilroy
+		font-size: 16px
+		font-weight: 700
+	&__signup
+		width: 158px
+		height: 32px
+		border-radius: 48px
+		background-color: #ffbb00
+		color: #000000
+		font-family: Gilroy
+		font-size: 16px
+		font-weight: 700
+/// MAIN ///////
+.main-sell
+	display: flex
+.sell
+	margin-top: 140px
+	margin-left: 135px
+	&__hl
+		color: #000000
+		font-family: Gilroy
+		font-size: 46px
+		cursor: default
+		font-weight: 800
+.sell-block
+	&__hl
+		display: flex
+		justify-content: space-between
+		width: 296px
+		margin-top: 25px
+		padding-bottom: 15px
+.sell-left, .sell-right, .sell-rezerv, .buy-right
+	color: #b2b2b2
+	font-family: Gilroy
+	font-size: 16px
+	font-weight: 400
+	cursor: default
+.sell-rezerv
+	margin-right: -20px
+.sell-left
+	margin-left: 31px
+.sell-block
+	max-width: 330px
+	display: flex
+	cursor: pointer
+	transition: 0.2s
+	border-bottom: 1px solid #f2f2f2
+	&:hover
+		background-color: #fffaeb
+.sell-sys
+	width: 78%
+	height: 66px
+	&-section
+		height: 66px
+		display: flex
+		align-items: center
+		padding-left: 30px
+		img
+			width: 22px
+			height: 22px
+		&__name
+			color: #000000
+			font-family: Gilroy
+			font-size: 22px
+			font-weight: 400
+			line-height: 22px
+			margin-left: 16px
+.sell-val
+	margin-left: 6px
+	margin-top: 22px
+	color: #000000
+	font-family: Gilroy
+	font-size: 16px
+	font-weight: 500
+	text-transform: uppercase
+.buy
+	margin-top: 140px
+	margin-left: 120px
+.buy-block
+	max-width: 450px
+	align-items: center
+	border: 2px solid transparent
+	border-top: 0px solid #f2f2f2
+	border-bottom: 1px solid #f2f2f2
+	&:hover .sell-sys-section__name
+		font-weight: 500
+	&:hover .sell-val
+		font-weight: 600
+	&:hover .buy-rezerv__value
+		font-weight: 500
+.buy-block-noclick
+	border: 2px solid transparent
+	border-bottom: 1px solid #f2f2f2
+.buy-block-click
+	border-radius: 10px
+	border-bottom: 0px solid #f2f2f2
+	border: 2px solid #ffbb00
+.buy-block__hl
+	width: 425px
+	display: flex
+	justify-content: space-between
+	margin-top: 25px
+	padding-bottom: 15px
+	position: relative
+	&:after
+		content: ""
+		border-bottom: 1px solid #f2f2f2
+		width: 105%
+		position: absolute
+		bottom: 0px
+.sell-block__hl
+	position: relative
+	&:after
+		content: ""
+		border-bottom: 1px solid #f2f2f2
+		width: 100%
+		position: absolute
+		bottom: 0px
+.buy-sys
+	width: 265px
+	height: 65.64px
+	.sell-sys-section
+		img
+			color: #000000
+.buy-right
+	margin-left: 80px
+.buy-val
+	margin-left: -9px
+	margin-top: 0px
+	width: 50px
+.buy-rezerv
+	margin-left: 80px
+	padding-right: 5px
+	width: 54px
+	text-align: right
+	&__value
+		text-align: right
+		color: #000000
+		font-family: Gilroy
+		font-size: 16px
+		font-weight: 400
+		line-height: 22px
+.news
+	height: 1053px
+	background-color: #101214
+	margin-top: 150px
+	&__hl
+		color: #ffbb00
+		font-family: Gilroy
+		font-size: 46px
+		font-weight: 800
+		line-height: 46px
+		padding-top: 110px
+.news-block
+	display: flex
+	padding-top: 51px
+.news-lblock
+	height: 675px
+	background-color: #f7f7f7
+	&-header
+		background-color: black
+		background-image: url(../img/news.png)
+		background-size: contain
+		background-repeat: no-repeat
+		width: 704px
+		height: 255px
+		&__date
+			padding-left: 35px
+			padding-top: 80px
+			color: #ffbb00
+			font-family: Inter
+			font-size: 16px
+			font-weight: 500
+			line-height: 24px
+		&__p
+			padding-left: 35px
+			width: 656px
+			color: #ffffff
+			font-family: Gilroy
+			font-size: 32px
+			font-weight: 700
+			line-height: 40px
+	&__about
+		max-width: 625px
+		color: #333333
+		font-family: Inter
+		font-size: 16px
+		font-weight: 400
+		line-height: 24px
+		padding-top: 36px
+		padding-left: 35px
+.news-rblock
+	width: 426px
+	background-color: #ffffff
+	height: 675px
+.news-rblock
+	border-radius: 10px
+	&-about
+		width: 326px
+		padding-left: 16px
+		padding-right: 16px
+		padding-bottom: 16px
+		margin-left: 20px
+		margin-top: 2px
+		margin-bottom: 2px
+		cursor: pointer
+		border: 2px solid transparent
+		&:first-child
+		&__date
+			margin-top: 17px
+			color: #808080
+			font-family: Gilroy
+			font-size: 14px
+			font-weight: 400
+			line-height: 21px
+		&__p
+			color: #333333
+			font-family: Gilroy
+			font-size: 16px
+			font-weight: 600
+			line-height: 22px
+			margin-top: 3px
+.news-rblock--active
+	border-radius: 10px
+	border: 2px solid #ffbb00
+	background-color: #fffaeb
+	transition: 0.2s
+.news-rblock-scroll
+	width: 410px
+	height: 720px
+	background-color: white
+	overflow-y: scroll
+.news-rblock-scroll::-webkit-scrollbar
+	width: 5px
+.news-rblock-scroll::-webkit-scrollbar-thumb
+	background-color: #333333
+	border-radius: 1000px
+.news-rblock-scroll::-webkit-scrollbar-track-piece
+	background-color: #e5e5e5
+.news-rblock-scroll::-webkit-scrollbar-track
+		width: 2px
+.news-rblock-scroll::-webkit-scrollbar-track-piece
+		&:end
+			background: #e5e5e5
+			margin-bottom: 80px
+			border-radius: 2000px
+		&:start
+			background: #e5e5e5
+			margin-top: 30px
+			border-radius: 2000px
+.discount
+	padding-top: 105px
+	height: 565px
+	&__hl
+		color: #000000
+		font-family: Gilroy
+		font-size: 46px
+		font-weight: 800
+		padding-bottom: 47px
+.discount-block
+	display: flex
+	justify-content: space-between
+	&-item
+		width: 265px
+		height: 301px
+		border-radius: 10px
+		border: 1px solid #e5e5e5
+		background-color: #ffffff
+		text-align: center
+		img
+			width: 58px
+			height: 58px
+		&__about
+			width: 240px
+			color: #000000
+			font-family: Gilroy
+			font-size: 22px
+			font-weight: 700
+			margin: 0 auto
+			margin-top: 25px
+		&__p
+			margin-top: 10px
+			width: 235px
+			margin: 0 auto
+			margin-top: 7px
+			color: #999999
+			font-family: Gilroy
+			font-size: 14px
+			font-weight: 400
+			line-height: 21px
+		img
+			padding-top: 60px
+///// О ПРОГРАММЕ //////
+.point-block
+	display: flex
+	justify-content: space-between
+.point
+	height: 500px
+	background-color: #111315
+	&-lblock
+		&__hl
+			color: #ffbb00
+			font-family: Gilroy
+			font-size: 46px
+			font-weight: 800
+			line-height: 46px
+			padding-top: 101px
+			padding-bottom: 26px
+		&__p
+			color: #cccccc
+			font-family: Inter
+			font-size: 16px
+			font-weight: 400
+			line-height: 24px
+			width: 495px
+		&__trigger
+			max-width: 353px
+			height: 41px
+			border-radius: 10px
+			background-color: #f2f2f2
+			color: #000000
+			font-family: Inter
+			font-size: 22px
+			font-weight: 500
+			line-height: 22px
+			text-align: center
+			padding-top: 19px
+			margin-top: 36px
+			cursor: default
+.point-rblock
+	padding-top: 101px
+	&-t
+		width: 524px
+		height: 315px
+		border-radius: 10px
+		background-color: #272829
+		&-hl
+			display: flex
+			justify-content: space-around
+			padding-top: 16px
+			margin-bottom: 10px
+			&__item
+				color: #ffbb00
+				font-family: Gilroy
+				font-size: 22px
+				font-weight: 700
+.point-rblock-t-line
+	display: flex
+	justify-content: space-between
+	height: 36px
+	background-color: #363738
+	color: #cccccc
+	padding-top: 3px
+	padding-bottom: 3px
+	&:nth-child(2n+1)
+		background-color: #272829
+		color: #808080
+	&__level, &__coin, &__bonus
+		font-family: Gilroy
+		font-size: 22px
+		font-weight: 400
+		line-height: 22px
+		margin-top: 8px
+	&__level
+		margin-left: 48px
+		width: 110px
+		text-align: left
+	&__coin
+		margin-left: -50px
+		width: 87px
+		text-align: right
+	&__bonus
+		margin-right: 48px
+		width: 70px
+		text-align: right
+/// РЕФЕРАЛЬНАЯ ПРОГРАММА
+.ref
+	height: 623px
+	background-color: #ffc72e
+	&-block
+		display: flex
+		justify-content: space-between
+	&-left
+		width: 560px
+	&__hl
+		color: #000000
+		font-family: Gilroy
+		font-size: 44px
+		font-weight: 800
+		padding-top: 106px
+	&-notify
+		color: #333333
+		font-family: Inter
+		font-size: 16px
+		font-weight: 400
+		line-height: 24px
+		padding-top: 35px
+		width: 565px
+		&--w
+			color: #000000
+			font-family: "Inter"
+			font-weight: 800
+			font-size: 16px
+	&-right
+		padding-top: 177px
+.point-rblock-t--w
+	background-color: #f7f7f7
+	height: auto
+	padding-bottom: 20px
+.ref-right
+	.point-rblock-t-line
+		background-color: #f7f7f7
+		color: #808080
+		&:nth-child(2n+2)
+			background-color: #ededed
+			color: #4d4d4d
+	.point-rblock-t-hl__item
+		color: #000000
+//// КОНТАКТЫ ///
+.contacts
+	height: 839px
+	&-block
+	&-left
+		padding-top: 110px
+		&__hl
+			color: #000000
+			font-family: Gilroy
+			font-size: 46px
+			font-weight: 800
+			line-height: 46px
+	&-info
+		padding-top: 50px
+		display: flex
+		&__phone, &__email
+			display: flex
+			align-items: center
+			a
+				padding-left: 11px
+				color: #000000
+				font-family: Gilroy
+				font-size: 16px
+				font-weight: 700
+				text-decoration: none
+				line-height: 24px
+				transition: 0.2s
+				&:hover
+					color: #ffbb00
+		&__email
+			padding-left: 44px
+.contacts-form__hl
+	color: #000000
+	font-family: Gilroy
+	font-size: 32px
+	font-weight: 700
+	line-height: 40px
+	padding-top: 80px
+.contacts-form
+	&-upper
+		padding-top: 25px
+		display: flex
+		&__name, &__email
+			input
+				height: 44px
+				border-radius: 4px
+				border: 1px solid #e5e5e5
+				background-color: #ffffff
+				outline: none
+				color: #666666
+				font-family: Rubik
+				font-size: 16px
+				font-weight: 400
+				padding-left: 16px
+				transition: 0.2s
+				&:focus
+					border-radius: 4px
+					border: 2px solid #ffbb00
+		&__name
+			p
+				color: #999999
+				font-family: Gilroy
+				font-size: 14px
+				font-weight: 400
+				line-height: 21px
+			input
+				width: 152px
+		&__email
+			padding-left: 32px
+			p
+				color: #999999
+				font-family: Gilroy
+				font-size: 14px
+				font-weight: 400
+				line-height: 21px
+			input
+				width: 252px
+	&-footer
+		padding-top: 26px
+		&__msg
+			p
+				color: #999999
+				font-family: Gilroy
+				font-size: 14px
+				font-weight: 400
+				line-height: 21px
+			textarea
+				width: 454px
+				height: 121px
+				border-radius: 4px
+				border: 1px solid #e5e5e5
+				background-color: #ffffff
+				outline: none
+				color: #000000
+				font-family: Rubik
+				font-size: 16px
+				font-weight: 400
+				line-height: 16px
+				padding-left: 16px
+				resize: none
+				padding-top: 11px
+				transition: 0.2s
+				&:focus
+					border-radius: 4px
+					border: 2px solid #ffbb00
+			button
+				width: 169px
+				height: 44px
+				border-radius: 48px
+				background-color: #ffbb00
+				display: block
+				outline: none
+				border: none
+				color: #12120d
+				font-family: Gilroy
+				font-size: 16px
+				font-weight: 700
+				line-height: 16px
+				margin-top: 32px
+				cursor: pointer
+.footer
+	height: 228px
+	background-color: #101214
+	&-block
+		text-align: center
+		padding-top: 58px
+	&__logo
+		padding-bottom: 5px
+		cursor: pointer
+	&-cname
+		color: #ffffff
+		line-height: 16px
+		font-family: Gilroy
+		font-size: 16px
+		font-weight: 700
+		cursor: pointer
+		span
+			color: #ffbb00
+	&-copy
+		padding-top: 11px
+		color: #808080
+		font-family: Gilroy
+		font-size: 14px
+		font-weight: 500
+		line-height: 24px
+		cursor: default
+
